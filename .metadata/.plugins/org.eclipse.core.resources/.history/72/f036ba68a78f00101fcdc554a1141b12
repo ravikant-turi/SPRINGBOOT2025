@@ -1,0 +1,5 @@
+package com.java.ems.service;
+
+public interface EmployeeService {
+
+}

@@ -1,0 +1,18 @@
+package com.java.ems.service;
+
+import java.util.List;
+
+import com.java.ems.dto.EmployeeDto;
+import com.java.ems.entity.Employee;
+
+public interface EmployeeService {
+	
+	
+
+	EmployeeDto createEmployee(EmployeeDto employeeDto);
+
+	EmployeeDto FindEmployeeById(long id);
+
+	List<EmployeeDto> FindAllEmployee();
+
+}

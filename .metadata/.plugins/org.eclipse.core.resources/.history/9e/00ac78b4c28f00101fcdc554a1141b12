@@ -1,0 +1,19 @@
+package com.java.ems.service;
+
+import java.util.List;
+
+import com.java.ems.dto.EmployeeDto;
+
+public interface EmployeeService {
+
+	EmployeeDto createEmployee(EmployeeDto employeeDto);
+
+	EmployeeDto FindEmployeeById(long id);
+
+	List<EmployeeDto> FindAllEmployee();
+
+	EmployeeDto updateEmployee(Long id, EmployeeDto dto);
+	
+	String update
+
+}

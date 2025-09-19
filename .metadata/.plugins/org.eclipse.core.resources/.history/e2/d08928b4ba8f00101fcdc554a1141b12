@@ -1,0 +1,48 @@
+package com.java.ems.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.java.ems.dto.EmployeeDto;
+import com.java.ems.service.EmployeeService;
+
+@RestController
+@RequestMapping("/api/employees")
+
+public class EmployeeController {
+	@Autowired
+	private EmployeeService employeeService;
+
+	@PostMapping
+	public ResponseEntity<EmployeeDto> createEmployee(@RequestBody EmployeeDto dto) {
+
+		EmployeeDto saveEmployeeDto = employeeService.createEmployee(dto);
+
+		return new ResponseEntity<>(saveEmployeeDto, HttpStatus.CREATED);
+
+	}
+
+	@GetMapping
+	public ResponseEntity<List<EmployeeDto>> findAllEmployee() {
+
+		List<EmployeeDto> employeeDtos = employeeService.FindAllEmployee();
+
+		return new ResponseEntity<>(employeeDtos, HttpStatus.OK);
+	}
+	@GetMapping("/{id}")
+	public ResponseEntity<List<EmployeeDto>> findEmployeeById() {
+
+		List<EmployeeDto> employeeDtos = employeeService.FindAllEmployee();
+
+		return new ResponseEntity<>(employeeDtos, HttpStatus.OK);
+	}
+
+}

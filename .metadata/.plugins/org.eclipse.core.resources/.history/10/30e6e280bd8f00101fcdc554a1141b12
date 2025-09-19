@@ -1,0 +1,5 @@
+package com.java.ems.exception;
+
+public class ResourceNotFoundException {
+
+}

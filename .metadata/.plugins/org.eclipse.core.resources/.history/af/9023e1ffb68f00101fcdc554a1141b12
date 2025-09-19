@@ -1,0 +1,10 @@
+package com.java.ems.service;
+
+import com.java.ems.dto.EmployeeDto;
+
+public interface EmployeeService {
+
+	EmployeeDto createEmployee(EmployeeDto employeeDto);
+	
+
+}

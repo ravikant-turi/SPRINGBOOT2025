@@ -1,0 +1,5 @@
+package com.java.ems.dto;
+
+public class EmployeeDto {
+
+}

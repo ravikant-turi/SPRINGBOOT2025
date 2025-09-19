@@ -1,0 +1,5 @@
+package com.java.ems.entity;
+
+public class Employee {
+
+}
