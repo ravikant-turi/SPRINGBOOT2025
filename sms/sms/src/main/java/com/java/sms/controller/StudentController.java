@@ -46,6 +46,9 @@ public class StudentController {
 		return new ResponseEntity<>(studentFound, HttpStatus.OK);
 	}
 
+	/*
+	 * this is restApi to updated the student
+	 */
 	@PutMapping("/{rollNumber}")
 	public ResponseEntity<Student> updateStudentByRollNumber(@RequestBody Student student,
 			@PathVariable("rollNumber") Long rollNUmber) {
