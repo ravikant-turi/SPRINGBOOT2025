@@ -1,4 +1,4 @@
-package com.java.sms.modal;
+package com.java.sms.model;
 
 import java.util.Objects;
 

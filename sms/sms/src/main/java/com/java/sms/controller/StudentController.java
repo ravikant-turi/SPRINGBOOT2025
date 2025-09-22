@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.java.sms.modal.Student;
+import com.java.sms.model.Student;
 import com.java.sms.service.StudentService;
 
 //http://localhost:8080/swagger-ui/index.html

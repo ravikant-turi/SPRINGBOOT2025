@@ -2,7 +2,7 @@ package com.java.sms.service;
 
 import java.util.List;
 
-import com.java.sms.modal.Student;
+import com.java.sms.model.Student;
 
 public interface StudentService {
 

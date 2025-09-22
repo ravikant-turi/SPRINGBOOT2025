@@ -5,7 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.java.sms.modal.Student;
+import com.java.sms.exceptions.ResourceNotFoundException;
+import com.java.sms.model.Student;
 import com.java.sms.repository.StudentRepository;
 import com.java.sms.service.StudentService;
 
@@ -22,23 +23,22 @@ public class StudentServiceImpl implements StudentService {
 
 	@Override
 	public Student findStudentByRollNumber(long rollNumber) {
+//		Student student = this.studentRepository.findById(rollNumber)
+//				.orElseThrow(() -> new RuntimeException("Student Not Found with roll number: " + rollNumber));
 		Student student = this.studentRepository.findById(rollNumber)
-				.orElseThrow(() -> new RuntimeException("Student Not Found with roll number: " + rollNumber));
+				.orElseThrow(() -> new ResourceNotFoundException("Student Not Found with roll number: " + rollNumber));
 
 		return student;
 	}
-
 	@Override
 	public List<Student> findAllStudents() {
 		List<Student> students = this.studentRepository.findAll();
 		return students;
 	}
-
 	@Override
 	public Student updateStudentByRollNumber(Long rollNumber, Student student) {
 		Student studentFound = this.studentRepository.findById(rollNumber)
-				.orElseThrow(() -> new RuntimeException("Student Not Found with roll number: " + rollNumber));
-
+				.orElseThrow(() -> new ResourceNotFoundException("Student Not Found with roll number: " + rollNumber));
 		studentFound.setName(student.getName());
 		studentFound.setAge(student.getAge());
 		studentFound.setCity(student.getCity());
@@ -48,15 +48,13 @@ public class StudentServiceImpl implements StudentService {
 		Student updatedStudent = this.studentRepository.save(studentFound);
 		return updatedStudent;
 	}
-
 	@Override
 	public String deleteStudentByRollNumber(Long rollNumber) {
 		Student student = this.studentRepository.findById(rollNumber)
-				.orElseThrow(() -> new RuntimeException("Student Not Found with roll number: " + rollNumber));
+				.orElseThrow(() -> new ResourceNotFoundException("Student Not Found with roll number: " + rollNumber));
 
 		this.studentRepository.delete(student);
 
 		return "deleted successfully";
 	}
-
 }
