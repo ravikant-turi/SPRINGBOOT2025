@@ -18,7 +18,11 @@ import com.java.sms.service.AppUserService;
 @RestController
 @RequestMapping("/api/AppUser")
 public class AppUserController {
-
+	
+	 @RequestMapping("/error")
+	    public ResponseEntity<String> handleError() {
+	        return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Access Denied: You do not have permission.");
+	    }
 	@Autowired
 	private AppUserService appUserService;
 

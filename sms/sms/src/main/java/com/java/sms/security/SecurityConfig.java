@@ -22,39 +22,68 @@ public class SecurityConfig {
 
 	@Bean
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-		http.csrf().disable()
-				.authorizeHttpRequests(auth -> auth.requestMatchers("/api/index").permitAll()
-						.requestMatchers("/api/user").hasRole("USER").requestMatchers("/api/admin").hasRole("ADMIN")
-						.anyRequest().authenticated())
-				.httpBasic();
-		return http.build();
-	}
+		 http.csrf().disable() // Disables CSRF protection (useful for APIs)
+         .authorizeHttpRequests(auth -> auth
+             .requestMatchers("/api/index").permitAll() // Public endpoint, no authentication required
+             .requestMatchers("/api/AppUser/user/**").hasRole("USER") // Requires USER role
+             .requestMatchers("/api/AppUser/user/**").hasRole("ADMIN") // Requires ADMIN role
+             .anyRequest().authenticated() // All other requests require authentication
+         )
+         .formLogin(); // Enables Basic Authentication (username/password via HTTP header)
 
-//	@Bean
-//	public InMemoryUserDetailsManager userDetailsService(PasswordEncoder encoder) {
-//		UserDetails user = User.builder().username("user").password(encoder.encode("user123")).roles("USER").build();
-//
-//		UserDetails admin = User.builder().username("admin").password(encoder.encode("admin123")).roles("ADMIN")
-//				.build();
-//
-//		return new InMemoryUserDetailsManager(user, admin);
-//	}
+     return http.build(); // Builds the security filter chain
+ }
 
-	@Bean
-	public UserDetailsService userDetailsService(UserRepository userRepository) {
-		return username -> {
-			AppUser appUser = userRepository.findByUsername(username).orElseThrow(
-					() -> new ResourceNotFoundException("Student Not Found with roll number: " + username));
 
-			return User.builder().username(appUser.getUsername()).password(appUser.getPassword()) // Must be BCrypt-encoded
-					.roles(appUser.getRole()) // e.g., "USER" or "ADMIN"
-					.build();
-		};
+	
+// Custom UserDetailsService that loads user data from the database
+    @Bean
+    public UserDetailsService userDetailsService(UserRepository userRepository) {
+        return username -> {
+            // Fetch user from database using username
+        	
+        	System.err.println("========================="+ username);
+        	AppUser appUser = userRepository.findByUsername(username).orElseThrow(
+					() -> new ResourceNotFoundException("User Not Found with roll number: " + username));
+            // Build a Spring Security User object using data from AppUser
+        	System.err.println("========================="+ appUser.getRole());
 
-	}
-
+            return User.builder()
+                .username(appUser.getUsername()) // Set username
+                .password(appUser.getPassword()) // Set encoded password
+                .roles(appUser.getRole()) // Set role (e.g., USER or ADMIN)
+                .build();
+        };
+        
+    }
 	@Bean
 	public PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
 	}
 }
+
+
+
+//@Bean
+//public InMemoryUserDetailsManager userDetailsService(PasswordEncoder encoder) {
+//	UserDetails user = User.builder().username("user").password(encoder.encode("user123")).roles("USER").build();
+//
+//	UserDetails admin = User.builder().username("admin").password(encoder.encode("admin123")).roles("ADMIN")
+//			.build();
+//
+//	return new InMemoryUserDetailsManager(user, admin);
+//}
+
+//@Bean
+//public UserDetailsService userDetailsService(UserRepository userRepository) {
+//	return username -> {
+//		AppUser appUser = userRepository.findByUsername(username).orElseThrow(
+//				() -> new ResourceNotFoundException("Student Not Found with roll number: " + username));
+//
+//		return User.builder().username(appUser.getUsername()).password(appUser.getPassword()) // Must be BCrypt-encoded
+//				.roles(appUser.getRole()) // e.g., "USER" or "ADMIN"
+//				.build();
+//	};
+//
+//}
+
