@@ -1,4 +1,4 @@
-package com.java.sms.mapping;
+  package com.java.sms.mapping;
 
 public class StudentDto {
 	

@@ -15,8 +15,10 @@ public class AppUser {
 	
 	private Long id;
 
-	private String name;
+	private String username;
 
 	private String Password;
+	
+	private String role;
 
 }
