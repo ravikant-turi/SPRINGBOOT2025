@@ -25,6 +25,7 @@ public class Employee {
 	
 	private double salary;
 	@Column(length = 300)
+	
 	private String address;
 	private String dateTime;
 
