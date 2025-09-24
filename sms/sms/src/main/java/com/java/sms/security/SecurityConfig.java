@@ -53,8 +53,7 @@ public class SecurityConfig {
                 .password(appUser.getPassword()) // Set encoded password
                 .roles(appUser.getRole()) // Set role (e.g., USER or ADMIN)
                 .build();
-        };
-        
+        }; 
     }
 	@Bean
 	public PasswordEncoder passwordEncoder() {
