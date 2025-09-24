@@ -11,7 +11,7 @@ public interface EmployeeService {
 
 	ApiResponse<Employee> saveEmployee(EmployeeDto dto);
 
-	ApiResponse<Employee> findEmployeeById(int id);
+	ApiResponse<Employee> findEmployeeById(String id);
 
 	ApiResponse<List<Employee>> findAllEmployee();
 

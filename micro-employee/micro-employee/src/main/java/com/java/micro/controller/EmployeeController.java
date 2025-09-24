@@ -46,7 +46,7 @@ public class EmployeeController {
 
 	@GetMapping("{id}")
 	public ResponseEntity<ApiResponse<Employee>> getEmployeeById(@PathVariable("id") String id) {
-		ApiResponse<Employee> foundApiResponse = this.employeeService.findEmployeeById(0);
+		ApiResponse<Employee> foundApiResponse = this.employeeService.findEmployeeById(id);
 		return ResponseEntity.status(HttpStatus.OK).body(foundApiResponse);
 
 	}

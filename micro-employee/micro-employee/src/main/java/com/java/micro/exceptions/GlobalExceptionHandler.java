@@ -36,4 +36,11 @@ public class GlobalExceptionHandler {
 		return ResponseEntity.badRequest().body(response);
 	}
 
+	@ExceptionHandler(ResourceNotFoundException.class)
+	public ResponseEntity<ApiResponse<Map<String, String>>> handleResourceNotFoundException(
+			ResourceNotFoundException ex) {
+		ApiResponse<Map<String, String>> response = new ApiResponse<>("ERROR", ex.getMessage(), Collections.emptyMap());
+		return ResponseEntity.badRequest().body(response);
+	}
+
 }
