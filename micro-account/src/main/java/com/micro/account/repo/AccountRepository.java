@@ -6,4 +6,6 @@ import com.micro.account.entity.Account;
 
 public interface AccountRepository extends JpaRepository<Account, String> {
 
+	Account findByAccNo(String accountNumber);
+
 }

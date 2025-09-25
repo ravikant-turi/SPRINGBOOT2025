@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class AccountDtor {
+public class AccountDto {
 	
 	@NotBlank(message = "account number cant be empty")
 	@Pattern(regexp = "\\d{16}", message = "Account no must be exactly 16 digit")
