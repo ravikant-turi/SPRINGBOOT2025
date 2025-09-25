@@ -39,9 +39,8 @@ public class AccountServiceImpl implements AccountService {
 	@Override
 	public ApiResponse<Account> findAccountByAccountNumber(String accountNumber) {
 
-		Account accountFound = this.accountRepository.findByAccNo(accountNumber).orElseThrow(
-				() -> new ResourceNotFoundException("Account is not found with this id : " + accountNumber));
-		;
+		Account accountFound = this.accountRepository.findByAccNo(accountNumber)
+				.orElseThrow(() -> new ResourceNotFoundException("Account is not found with this id : " + accountNumber));
 		return new ApiResponse<Account>("SUCCESS", "ACCOUNT_DATA_FOUND", accountFound);
 	}
 
