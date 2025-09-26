@@ -39,13 +39,14 @@ public class AccountServiceImpl implements AccountService {
 	@Override
 	public ApiResponse<Account> findAccountByAccountNumber(String accountNumber) {
 
-		Account accountFound = this.accountRepository.findByAccNo(accountNumber)
-				.orElseThrow(() -> new ResourceNotFoundException("Account is not found with this id : " + accountNumber));
+		Account accountFound = this.accountRepository.findByAccNo(accountNumber).orElseThrow(
+				() -> new ResourceNotFoundException("Account is not found with this id : " + accountNumber));
 		return new ApiResponse<Account>("SUCCESS", "ACCOUNT_DATA_FOUND", accountFound);
 	}
 
 	@Override
 	public ApiResponse<List<Account>> findAllAccount() {
+
 		List<Account> accounts;
 
 		accounts = this.accountRepository.findAll();
@@ -62,6 +63,34 @@ public class AccountServiceImpl implements AccountService {
 		Account accountFound = this.accountRepository.findById(id)
 				.orElseThrow(() -> new ResourceNotFoundException("Account is not found with this id : " + id));
 		return new ApiResponse<Account>("SUCCESS", "ACCOUNT_DATA_FOUND", accountFound);
+	}
+
+	@Override
+	public ApiResponse<Account> updateAccount(String id, AccountDto updatedData) {
+
+		Account account = this.accountRepository.findById(id)
+				.orElseThrow(() -> new ResourceNotFoundException("Account not found with id: " + id));
+
+ 		account.setAccNo(updatedData.getAccNo());
+		account.setBankName(updatedData.getBankName());
+		account.setIfsc(updatedData.getIfsc());
+		account.setAddress(updatedData.getAddress());
+		account.setDateTime(LocalDateTime.now().toString());
+		account.setEmployeeId(updatedData.getEmployeeId());
+
+		Account updatedAccount = this.accountRepository.save(account);
+		return new ApiResponse<>("SUCCESS", "ACCOUNT_UPDATED_SUCCESSFULLY", updatedAccount);
+	}
+
+	@Override
+	public ApiResponse<Void> deleteAccount(String id) {
+
+		Account account = this.accountRepository.findById(id)
+				.orElseThrow(() -> new ResourceNotFoundException("Account not found with id: " + id));
+
+		this.accountRepository.delete(account);
+
+		return new ApiResponse<>("SUCCESS", "ACCOUNT_DELETED_SUCCESSFULLY", null);
 	}
 
 }

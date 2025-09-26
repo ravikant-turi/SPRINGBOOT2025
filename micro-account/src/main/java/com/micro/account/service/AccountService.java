@@ -15,5 +15,10 @@ public interface AccountService {
 	ApiResponse<List<Account>> findAllAccount();
 
 	ApiResponse<Account> findAccountById(String id);
+	
+	ApiResponse<Account> updateAccount(String id, AccountDto updatedData);
+
+	ApiResponse<Void> deleteAccount(String id);
+
 
 }
