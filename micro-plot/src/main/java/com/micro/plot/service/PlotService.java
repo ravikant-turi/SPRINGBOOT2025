@@ -8,9 +8,9 @@ import com.micro.plot.payload.ApiResponse;
 
 public interface PlotService {
 
-	ApiResponse<Plot> savePilot(PlotDto plotDto);
+	ApiResponse<Plot> savePlot(PlotDto plotDto);
 
 	ApiResponse<List<Plot>> findAllPlot();
 
-	ApiResponse<Plot> findPlotById();
+	ApiResponse<Plot> findPlotByPlotId(String id);
 }

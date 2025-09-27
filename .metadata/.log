@@ -2836,3 +2836,99 @@ org.apache.maven.project.ProjectBuildingException: Some problems were encountere
 	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:221)
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-09-26 16:35:31.700
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:30.967
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:31.021
+!MESSAGE Could not send USER event 'Anonymous ID: d75d8a55-889a-477b-88d0-32c8a7f31f92': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:31.035
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:31.035
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:31.037
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:31.037
+!MESSAGE Could not send USER event 'Anonymous ID: d75d8a55-889a-477b-88d0-32c8a7f31f92': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:31.065
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:31.067
+!MESSAGE Could not send ACTION event 'startQuteLS': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:31.224
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:31.234
+!MESSAGE Could not send USER event 'Anonymous ID: d75d8a55-889a-477b-88d0-32c8a7f31f92': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:31.234
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:31.250
+!MESSAGE Could not send ACTION event 'finishWizard': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:31.250
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:31.252
+!MESSAGE Could not send USER event 'Anonymous ID: d75d8a55-889a-477b-88d0-32c8a7f31f92': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:31.254
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:31.285
+!MESSAGE Could not send ACTION event 'finishWizard': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:31.287
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:31.295
+!MESSAGE Could not send USER event 'Anonymous ID: d75d8a55-889a-477b-88d0-32c8a7f31f92': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:31.305
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:31.307
+!MESSAGE Could not send ACTION event 'finishWizard': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:31.313
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:31.317
+!MESSAGE Could not send USER event 'Anonymous ID: d75d8a55-889a-477b-88d0-32c8a7f31f92': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:31.321
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:31.325
+!MESSAGE Could not send ACTION event 'finishWizard': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:31.327
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:31.329
+!MESSAGE Could not send USER event 'Anonymous ID: d75d8a55-889a-477b-88d0-32c8a7f31f92': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:31.329
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-09-27 17:10:31.331
+!MESSAGE Could not send ACTION event 'startLS': no analytics instance present.
