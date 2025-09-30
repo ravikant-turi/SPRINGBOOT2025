@@ -36,19 +36,19 @@ public class PlotController {
 //		return new ResponseEntity<>(savedPlotApiResponse, HttpStatus.CREATED);
 	}
 
-//	@GetMapping
-//	public ResponseEntity<ApiResponse<List<Plot>>> getAllPlots() {
-//
-//		ApiResponse<List<Plot>> allPlotApiResponse = this.plotService.findAllPlot();
-//
-//		return ResponseEntity.status(HttpStatus.OK).body(allPlotApiResponse);
-//	}
+	@GetMapping
+	public ResponseEntity<ApiResponse<List<Plot>>> getAllPlots() {
 
-//	@GetMapping("{id}")
-//	public ResponseEntity<ApiResponse<Plot>> getPlotById(@PathVariable("id") String id) {
-//		ApiResponse<Plot> foundApiResponse = this.plotService.findPlotByPlotId(id);
-//		return ResponseEntity.status(HttpStatus.OK).body(foundApiResponse);
-//
-//	}
+		ApiResponse<List<Plot>> allPlotApiResponse = this.plotService.findAllPlot();
+
+		return ResponseEntity.status(HttpStatus.OK).body(allPlotApiResponse);
+	}
+
+	@GetMapping("{id}")
+	public ResponseEntity<ApiResponse<Plot>> getPlotById(@PathVariable("id") String id) {
+		ApiResponse<Plot> foundApiResponse = this.plotService.findPlotByPlotId(id);
+		return ResponseEntity.status(HttpStatus.OK).body(foundApiResponse);
+
+	}
 
 }
