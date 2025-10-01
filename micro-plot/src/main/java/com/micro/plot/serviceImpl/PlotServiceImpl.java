@@ -1,5 +1,8 @@
 package com.micro.plot.serviceImpl;
+import java.time.LocalDateTime;
 import java.util.List;
+import java.util.UUID;
+
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,6 +24,8 @@ public class PlotServiceImpl implements PlotService {
 	@Override
 	public ApiResponse<Plot> savePlot(PlotDto plotDto) {
 		Plot plot = modelMapper.map(plotDto, Plot.class);
+		plot.setId(UUID.randomUUID().toString());
+		plot.setDateTime(LocalDateTime.now().toString());
 		Plot savedPlot = plotRepository.save(plot);
 		return new ApiResponse<>("SUCCESS", "PLOT_SAVED_SUCCESSFULLY", savedPlot);
 	}

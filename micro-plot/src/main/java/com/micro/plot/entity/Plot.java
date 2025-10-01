@@ -23,10 +23,10 @@ public class Plot {
 	@Column(length = 30)
 	private String area;
 
-	@Column(length = 100)
+	@Column(length = 30)
 	private String coloneyName;
 
-	@Column(length = 100)
+	@Column(length = 30)
 	private String cityName;
 
 	private int pincode;

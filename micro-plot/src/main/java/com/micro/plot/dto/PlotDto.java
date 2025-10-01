@@ -1,7 +1,6 @@
 package com.micro.plot.dto;
-import jakarta.validation.constraints.Max;
-import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -17,16 +16,15 @@ public class PlotDto {
 	private String area;
 
 	@NotBlank(message = "coloneyName can not be empty or null")
-	@Size(min = 2, max = 100, message = "coloneyName must be between 20 to 100 character")
+	@Size(min = 2, max = 100, message = "coloneyName must be between 2 to 100 character")
 	private String coloneyName;
 
 	@NotBlank(message = "Area can not be null")
-	@Size(min = 30, max = 100, message = "Area must be between 20 to 100 character")
+	@Size(min = 2, max = 100, message = "Area must be between 2 to 100 character")
 	private String cityName;
 
-	@Min(value = 1000, message = "PinCode must exactly 6 digit")
-	@Max(value = 200, message = "PinCode must exactly 6 digit")
-	private int pincode;
+	@Pattern(regexp = "\\d{6}", message = "PinCode must be exactly 6 digits")
+	private String pincode;
 
 	@NotBlank(message = "EmployeeId can not be null or empty")
 	private String employeeId;
