@@ -1,8 +1,8 @@
 package com.micro.plot.serviceImpl;
+
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
-
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,7 +14,7 @@ import com.micro.plot.repository.PlotRepository;
 import com.micro.plot.service.PlotService;
 @Service
 public class PlotServiceImpl implements PlotService {
-	
+
 	@Autowired
 	private PlotRepository plotRepository;
 

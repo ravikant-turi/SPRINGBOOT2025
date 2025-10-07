@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MicroPlotApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(MicroPlotApplication.class, args);
+
 	}
 
 }
