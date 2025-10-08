@@ -19,6 +19,8 @@ public interface AccountService {
 	ApiResponse<Account> updateAccount(String id, AccountDto updatedData);
 
 	ApiResponse<Void> deleteAccount(String id);
+	
+	ApiResponse<Account>getAccountByEmployeeId (String id);
 
 
 }

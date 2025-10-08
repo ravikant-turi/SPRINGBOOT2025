@@ -50,4 +50,13 @@ public class GlobalalException {
 				Collections.emptyMap());
 		return ResponseEntity.internalServerError().body(apiResponse);
 	}
+
+	@ExceptionHandler(DuplicateResourceException.class)
+	public ResponseEntity<ApiResponse<Map<Object, Object>>> handleException(DuplicateResourceException ex) {
+
+		ApiResponse<Map<Object, Object>> apiResponse = new ApiResponse<>("ERROR", ex.getMessage(),
+				Collections.emptyMap());
+		return ResponseEntity.badRequest().body(apiResponse);
+	}
+
 }

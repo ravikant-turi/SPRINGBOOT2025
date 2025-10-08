@@ -10,4 +10,6 @@ public interface AccountRepository extends JpaRepository<Account, String> {
 
 	Optional<Account> findByAccNo(String accountNumber);
 
+	Optional<Account> findByEmployeeId(String empId);
+
 }

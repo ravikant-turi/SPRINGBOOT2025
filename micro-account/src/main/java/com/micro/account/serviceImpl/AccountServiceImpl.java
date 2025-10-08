@@ -1,15 +1,23 @@
 package com.micro.account.serviceImpl;
 
+import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
+import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.stereotype.Service;
-
+import org.springframework.web.client.DefaultResponseErrorHandler;
+import org.springframework.web.client.RestTemplate;
 import com.micro.account.dto.AccountDto;
+import com.micro.account.dto.external.EmployeeResponse;
 import com.micro.account.entity.Account;
+import com.micro.account.exceptiosns.DuplicateResourceException;
 import com.micro.account.exceptiosns.ResourceNotFoundException;
 import com.micro.account.payload.ApiResponse;
 import com.micro.account.repo.AccountRepository;
@@ -24,16 +32,72 @@ public class AccountServiceImpl implements AccountService {
 	@Autowired
 	private ModelMapper modelMapper;
 
+	@Autowired
+	private RestTemplate restTemplate;
+
 	@Override
 	public ApiResponse<Account> saveAccount(AccountDto accountDto) {
+	    // check if account no is already exist
+	    if (accountRepository.findByAccNo(accountDto.getAccNo()).isPresent()) {
+	        System.out.println("accountRepository.findByAccNo(accountDto.getAccNo()).isPresent(): "
+	                + accountRepository.findByAccNo(accountDto.getAccNo()).isPresent());
 
-		Account account = modelMapper.map(accountDto, Account.class);
+	        System.out.println("accountRepository.findByAccNo(accountDto.getAccNo()).isPresent(): "
+	                + accountRepository.findByAccNo(accountDto.getAccNo()).isPresent());
 
-		account.setDateTime(LocalDateTime.now().toString());
-		account.setId(UUID.randomUUID().toString());
+	        throw new DuplicateResourceException("ACCOUNT_NUMBER_ALREADY_EXIST " + accountDto.getAccNo());
+	    }
 
-		Account saveAccount = this.accountRepository.save(account);
-		return new ApiResponse<Account>("SUCCESS", "Account data is saved", saveAccount);
+	    // stop default exception handling behavior [ANNONIMOUS INNER CLASS]
+	    new DefaultResponseErrorHandler();
+	    restTemplate.setErrorHandler(new DefaultResponseErrorHandler() {
+	        @Override
+	        public boolean hasError(ClientHttpResponse response) throws IOException {
+	            return false;
+	        }
+	    });
+
+	    System.out.println("=============================================");
+	    System.out.println("=============================================");
+	    System.out.println("=============================================");
+	    System.out.println("=============================================");
+	    System.out.println("=============================================");
+
+	    // check if employee id is not present
+	    ResponseEntity<ApiResponse<EmployeeResponse>> response = restTemplate.exchange(
+	            // URl : API end point
+	            "http://localhost:8081/api/employees/" + accountDto.getEmployeeId(),
+	            // GET METHOD
+	            HttpMethod.GET,
+	            // Header will be null because it is not post request but get request
+	            null, // post request
+
+	            // the response you want i.e ApiResponse and by default response is in LindList
+	            new ParameterizedTypeReference<ApiResponse<EmployeeResponse>>() {
+	            });
+
+	    ApiResponse<EmployeeResponse> employeeResponse = response.getBody();
+
+	    System.out.println("employeeResponse : "+employeeResponse);
+	    System.out.println("Employee ID: " + accountDto.getEmployeeId());
+	    System.out.println("Calling URL: http://localhost:8081/api/employees/" + accountDto.getEmployeeId());
+	    System.out.println("Response status: " + response.getStatusCode());
+	    System.out.println("Response status: " + employeeResponse.getStatus());
+	    System.out.println("Response body: " + employeeResponse);
+
+	    if (employeeResponse == null || !"SUCCESS".equalsIgnoreCase(employeeResponse.getStatus().trim())
+	            || employeeResponse.getData() == null) {
+	        throw new ResourceNotFoundException("Employee not found with ID: " + accountDto.getEmployeeId()
+	                + " | URL attempted: http://localhost:8081/api/employees/" + accountDto.getEmployeeId());
+	    }
+
+	    Account account = modelMapper.map(accountDto, Account.class);
+
+	    account.setDateTime(LocalDateTime.now().toString());
+	    account.setId(UUID.randomUUID().toString());
+
+	    Account saveAccount = this.accountRepository.save(account);
+	    return new ApiResponse<Account>("SUCCESS", "Account data is saved", saveAccount);
 	}
 
 	@Override
@@ -71,7 +135,7 @@ public class AccountServiceImpl implements AccountService {
 		Account account = this.accountRepository.findById(id)
 				.orElseThrow(() -> new ResourceNotFoundException("Account not found with id: " + id));
 
- 		account.setAccNo(updatedData.getAccNo());
+		account.setAccNo(updatedData.getAccNo());
 		account.setBankName(updatedData.getBankName());
 		account.setIfsc(updatedData.getIfsc());
 		account.setAddress(updatedData.getAddress());
@@ -91,6 +155,16 @@ public class AccountServiceImpl implements AccountService {
 		this.accountRepository.delete(account);
 
 		return new ApiResponse<>("SUCCESS", "ACCOUNT_DELETED_SUCCESSFULLY", null);
+	}
+
+	@Override
+	public ApiResponse<Account> getAccountByEmployeeId(String id) {
+
+		Account account = this.accountRepository.findByEmployeeId(id)
+				.orElseThrow(() -> new ResourceNotFoundException("Employee is not found with id: " + id));
+
+		return new ApiResponse<>("SUCCESS", "ACCOUNT_DELETED_SUCCESSFULLY", account);
+
 	}
 
 }

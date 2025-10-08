@@ -48,4 +48,18 @@ public class AccountController {
 
 	}
 
+	@GetMapping("/accNo/{id}")
+	public ResponseEntity<ApiResponse<Account>> findAccountByAccNo(@PathVariable("id") String id) {
+		ApiResponse<Account> apiRespons = this.accountService.findAccountByAccountNumber(id);
+		return ResponseEntity.status(HttpStatus.CREATED).body(apiRespons);
+
+	}
+
+	@GetMapping("/emp/{id}")
+	public ResponseEntity<ApiResponse<Account>> findAccountByEmployeeNo(@PathVariable("id") String id) {
+		ApiResponse<Account> apiRespons = this.accountService.getAccountByEmployeeId(id);
+		return ResponseEntity.status(HttpStatus.CREATED).body(apiRespons);
+
+	}
+
 }
