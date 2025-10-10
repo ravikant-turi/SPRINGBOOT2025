@@ -4,7 +4,6 @@
 //import org.springframework.dao.DataIntegrityViolationException;
 //import org.springframework.http.HttpStatus;
 //import org.springframework.http.ResponseEntity;
-//import org.springframework.http.converter.HttpMessageNotReadableException;
 //import org.springframework.validation.FieldError;
 //import org.springframework.web.bind.MethodArgumentNotValidException;
 //import org.springframework.web.bind.MissingServletRequestParameterException;
@@ -51,12 +50,12 @@
 //        return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
 //    }
 //
-//    // 5. Handle malformed JSON or unreadable request body
-//    @ExceptionHandler(HttpMessageNotReadableException.class)
-//    public ResponseEntity<ApiResponse<String>> handleUnreadableMessage(HttpMessageNotReadableException ex) {
-//        ApiResponse<String> response = new ApiResponse<>("ERROR", "Malformed JSON request", null);
-//        return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
-//    }
+////     5. Handle malformed JSON or unreadable request body
+////    @ExceptionHandler(HttpMessageNotReadableException.class)
+////    public ResponseEntity<ApiResponse<String>> handleUnreadableMessage(HttpMessageNotReadableException ex) {
+////        ApiResponse<String> response = new ApiResponse<>("ERROR", "Malformed JSON request", null);
+////        return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+////    }
 //
 //    // 6. Handle database constraint violations (e.g., unique constraint)
 //    @ExceptionHandler(DataIntegrityViolationException.class)

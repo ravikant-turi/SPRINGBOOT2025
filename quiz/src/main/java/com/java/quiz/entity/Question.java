@@ -47,4 +47,8 @@ public class Question {
 	@NotNull(message = "Question number must not be null")
 	@Column(unique = true)
 	private Long questionNumber;
+	
+	
+	@NotNull(message = "DeficultyLevel number must not be null")
+	private DifficultyLevel deficultyLevel;
 }
