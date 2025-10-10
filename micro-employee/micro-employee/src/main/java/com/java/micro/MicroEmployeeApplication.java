@@ -1,3 +1,4 @@
+
 package com.java.micro;
 
 import org.springframework.boot.SpringApplication;
