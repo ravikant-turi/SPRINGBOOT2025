@@ -26,4 +26,5 @@ public interface QuestionService {
 
 	// OR if using enum:
 	List<Question> findByDeficultyLevel(DifficultyLevel deficultyLevel);
+
 }
