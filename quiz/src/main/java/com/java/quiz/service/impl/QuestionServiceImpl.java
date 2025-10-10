@@ -1,15 +1,18 @@
 package com.java.quiz.service.impl;
 
+import java.util.List;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.stereotype.Service;
+
+import com.java.quiz.entity.DifficultyLevel;
 import com.java.quiz.entity.Question;
 import com.java.quiz.exception.QuestionNotFoundException;
 import com.java.quiz.payload.QuestionDTO;
 import com.java.quiz.repository.QuestionRepository;
 import com.java.quiz.service.QuestionService;
-import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DataIntegrityViolationException;
-import org.springframework.stereotype.Service;
-import java.util.List;
 
 @Service
 public class QuestionServiceImpl implements QuestionService {
@@ -73,5 +76,18 @@ public class QuestionServiceImpl implements QuestionService {
 		} catch (DataIntegrityViolationException ex) {
 			throw new DataIntegrityViolationException("Failed to update: Question number must remain unique");
 		}
+	}
+
+	
+
+	@Override
+	public List<Question> findByCategory(String category) {
+		// TODO Auto-generated method stub
+		return this.questionRepository.findByCategory(category);
+	}
+
+	@Override
+	public List<Question> findByDeficultyLevel(DifficultyLevel deficultyLevel) {
+	         return questionRepository.findByDeficultyLevel(deficultyLevel);
 	}
 }

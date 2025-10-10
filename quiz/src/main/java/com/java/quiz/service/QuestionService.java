@@ -1,9 +1,10 @@
 package com.java.quiz.service;
 
-import com.java.quiz.payload.QuestionDTO;
-import com.java.quiz.entity.Question;
-
 import java.util.List;
+
+import com.java.quiz.entity.DifficultyLevel;
+import com.java.quiz.entity.Question;
+import com.java.quiz.payload.QuestionDTO;
 
 public interface QuestionService {
 
@@ -18,4 +19,11 @@ public interface QuestionService {
 	Question updateQuestionByQuestionNumber(Long quetionNumber, QuestionDTO questionDTO);
 
 	void deleteQuestion(Long id);
+
+	List<Question> findByCategory(String category);
+
+//	    List<Question> findByDeficultyLevel(Long deficultyLevel); // if using numeric
+
+	// OR if using enum:
+	List<Question> findByDeficultyLevel(DifficultyLevel deficultyLevel);
 }
