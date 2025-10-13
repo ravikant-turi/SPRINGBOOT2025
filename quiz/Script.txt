@@ -1,0 +1,64 @@
+create database quizapplication;
+
+SELECT * FROM quizapplication.question;
+
+
+use quizapplication;
+
+describe question;
+
+-- EASY LEVEL
+INSERT INTO question (content, optionA, optionB, optionC, optionD, correct_answer, category, question_number, deficulty_level)
+VALUES 
+("What is the correct file extension for Python files?", ".pyth", ".pt", ".py", ".pyt", "optionC", "Python", 1, "0"),
+("Which keyword is used to define a function in Python?", "func", "define", "def", "function", "optionC", "Python", 2, "0"),
+("What is the output of print(2 + 3 * 4)?", "20", "14", "24", "18", "optionB", "Python", 3, "0"),
+("Which of the following is a valid variable name in Python?", "2name", "name_2", "name-2", "name 2", "optionB", "Python", 4, "0"),
+("How do you insert comments in Python code?", "// This is a comment", "/* This is a comment */", "# This is a comment", "-- This is a comment", "optionC", "Python", 5, "0");
+
+-- MEDIUM LEVEL
+INSERT INTO question (content, optionA, optionB, optionC, optionD, correct_answer, category, question_number, deficulty_level)
+VALUES 
+("Which data type is used to store True or False values in Python?", "int", "bool", "str", "float", "optionB", "Python", 6, "1"),
+("What does the len() function do?", "Returns the length of a string", "Returns the type of a variable", "Returns the memory size", "Returns the index", "optionA", "Python", 7, "1"),
+("Which operator is used for exponentiation in Python?", "^", "**", "exp()", "//", "optionB", "Python", 8, "1"),
+("What is the output of: print(type([]))?", "<class 'list'>", "<type 'list'>", "list", "[]", "optionA", "Python", 9, "1"),
+("Which method is used to add an item to a list?", "append()", "add()", "insert()", "push()", "optionA", "Python", 10, "1");
+
+-- HARD LEVEL
+INSERT INTO question (content, optionA, optionB, optionC, optionD, correct_answer, category, question_number, deficulty_level)
+VALUES 
+("What is the result of: list(map(lambda x: x*x, [1, 2, 3]))?", "[1, 4, 9]", "[1, 2, 3]", "[2, 4, 6]", "[1, 8, 27]", "optionA", "Python", 11, "2"),
+("Which built-in function can be used to filter elements from a list?", "map()", "reduce()", "filter()", "select()", "optionC", "Python", 12, "2"),
+("What is the output of: print({x: x**2 for x in range(3)})?", "{0: 0, 1: 1, 2: 4}", "{1: 1, 2: 4, 3: 9}", "{0: 1, 1: 2, 2: 3}", "{0: 0, 1: 2, 2: 6}", "optionA", "Python", 13, "2"),
+("Which module is used for regular expressions in Python?", "regex", "re", "match", "search", "optionB", "Python", 14, "2"),
+("What is the output of: print('abc'[::-1])?", "abc", "cba", "bac", "cab", "optionB", "Python", 15, "2");
+
+
+
+ 
+ use quizapplication;
+-- EASY (difficulty level = 0)
+INSERT INTO question (content, optionA, optionB, optionC, optionD, correct_answer, category, question_number, deficulty_level) VALUES
+("Which keyword is used to define a class in Java?", "define", "class", "struct", "object", "optionB", "Java", 16, 0),
+("What is the default value of a boolean variable in Java?", "true", "false", "null", "0", "optionB", "Java", 17, 0),
+("Which method is the entry point of a Java application?", "start()", "main()", "run()", "execute()", "optionB", "Java", 18, 0),
+("Which symbol is used to end a statement in Java?", ".", ";", ":", "!", "optionB", "Java", 19, 0),
+("Which of the following is a valid Java identifier?", "2value", "value_2", "value-2", "value 2", "optionB", "Java", 20, 0);
+
+-- MEDIUM (difficulty level = 1)
+INSERT INTO question (content, optionA, optionB, optionC, optionD, correct_answer, category, question_number, deficulty_level) VALUES
+("Which of these is not a Java primitive type?", "int", "boolean", "String", "char", "optionC", "Java", 21, 1),
+("What does JVM stand for?", "Java Virtual Machine", "Java Variable Method", "Java Verified Module", "Java Version Manager", "optionA", "Java", 22, 1),
+("Which keyword is used to inherit a class in Java?", "inherits", "extends", "implements", "super", "optionB", "Java", 23, 1),
+("Which method is used to compare two strings in Java?", "equals()", "==", "compare()", "match()", "optionA", "Java", 24, 1),
+("Which package contains the Scanner class?", "java.io", "java.util", "java.lang", "java.text", "optionB", "Java", 25, 1);
+
+-- HARD (difficulty level = 2)
+INSERT INTO question (content, optionA, optionB, optionC, optionD, correct_answer, category, question_number, deficulty_level) VALUES
+("Which design pattern restricts object creation to one instance?", "Factory", "Singleton", "Builder", "Prototype", "optionB", "Java", 26, 2),
+("What is the output of: System.out.println(10 + 20 + \"30\")?", "3030", "102030", "3030.0", "3030.30", "optionA", "Java", 27, 2),
+("Which interface must be implemented to sort custom objects?", "Comparable", "Comparator", "Iterable", "Serializable", "optionA", "Java", 28, 2),
+("Which keyword prevents a class from being subclassed?", "final", "static", "private", "sealed", "optionA", "Java", 29, 2),
+("Which annotation is used to override a superclass method?", "@Override", "@Super", "@Method", "@Inherited", "optionA", "Java", 30, 2);
+
