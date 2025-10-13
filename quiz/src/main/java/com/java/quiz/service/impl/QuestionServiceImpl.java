@@ -1,93 +1,89 @@
 package com.java.quiz.service.impl;
 
 import java.util.List;
-
+import static com.java.quiz.constants.MessageConstants.*;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
-
 import com.java.quiz.entity.DifficultyLevel;
 import com.java.quiz.entity.Question;
 import com.java.quiz.exception.QuestionNotFoundException;
+import com.java.quiz.payload.ApiResponse;
 import com.java.quiz.payload.QuestionDTO;
 import com.java.quiz.repository.QuestionRepository;
 import com.java.quiz.service.QuestionService;
 
 @Service
 public class QuestionServiceImpl implements QuestionService {
-
 	@Autowired
 	private QuestionRepository questionRepository;
-
 	@Autowired
 	private ModelMapper modelMapper;
 
 	@Override
-	public Question createQuestion(QuestionDTO dto) {
+	public ApiResponse<Question> createQuestion(QuestionDTO dto) {
 		Question question = modelMapper.map(dto, Question.class);
-		try {
-			return questionRepository.save(question);
-		} catch (DataIntegrityViolationException ex) {
-			throw new DataIntegrityViolationException("Question number must be unique");
-		}
+		Question savedQuestion = questionRepository.save(question);
+		return new ApiResponse<>(SUCCESS, QUESTION_CREATED, savedQuestion);
 	}
 
 	@Override
-	public List<Question> getAllQuestions() {
-		return questionRepository.findAll();
+	public ApiResponse<List<Question>> getAllQuestions() {
+		List<Question> questions = questionRepository.findAll();
+		return new ApiResponse<>(SUCCESS, DATA_FOUND, questions);
 	}
 
 	@Override
-	public Question getQuestionById(Long id) {
-		return questionRepository.findById(id)
-				.orElseThrow(() -> new QuestionNotFoundException("Question not found with id: " + id));
+	public ApiResponse<Question> getQuestionById(Long id) {
+		Question questionFound = questionRepository.findById(id)
+				.orElseThrow(() -> new QuestionNotFoundException(QUESTION_NOT_FOUND_BY_ID + id));
+		return new ApiResponse<>(SUCCESS, DATA_FOUND, questionFound);
 	}
 
 	@Override
-	public void deleteQuestion(Long id) {
-		try {
-			Question question = questionRepository.findById(id)
-					.orElseThrow(() -> new QuestionNotFoundException("Question not found with id: " + id));
-			questionRepository.delete(question);
-		} catch (DataIntegrityViolationException ex) {
-			throw new DataIntegrityViolationException("Cannot delete question: It may be referenced elsewhere");
-		} catch (Exception ex) {
-			throw new RuntimeException("Failed to delete question: " + ex.getMessage());
-		}
+	public ApiResponse<String> deleteQuestion(Long id) {
+		Question question = questionRepository.findById(id)
+				.orElseThrow(() -> new QuestionNotFoundException(QUESTION_NOT_FOUND_BY_ID + id));
+		questionRepository.delete(question);
+		return new ApiResponse<>(SUCCESS, DATA_DELETED, QUESTION_ID_PREFIX + id);
 	}
 
 	@Override
-	public Question getQuestionByQuestionNumber(Long questionNumber) {
-		return questionRepository.findByQuestionNumber(questionNumber).orElseThrow(
-				() -> new QuestionNotFoundException("Question not found with question number: " + questionNumber));
+	public ApiResponse<Question> getQuestionByQuestionNumber(Long questionNumber) {
+		Question questionFound = questionRepository.findByQuestionNumber(questionNumber)
+				.orElseThrow(() -> new QuestionNotFoundException(QUESTION_NOT_FOUND_BY_NUMBER + questionNumber));
+		return new ApiResponse<>(SUCCESS, DATA_FOUND, questionFound);
 	}
 
 	@Override
-	public Question updateQuestionByQuestionNumber(Long questionNumber, QuestionDTO dto) {
-		Question existing = questionRepository.findByQuestionNumber(questionNumber).orElseThrow(
-				() -> new QuestionNotFoundException("Question not found with question number: " + questionNumber));
+	public ApiResponse<Question> updateQuestionByQuestionNumber(Long questionNumber, QuestionDTO dto) {
+		Question questionFound = questionRepository.findByQuestionNumber(questionNumber)
+				.orElseThrow(() -> new QuestionNotFoundException(QUESTION_NOT_FOUND_BY_NUMBER + questionNumber));
 
-		modelMapper.map(dto, existing);
-		existing.setQuestionNumber(questionNumber); // Preserve uniqueness
+		questionFound.setContent(dto.getContent());
+		questionFound.setOptionA(dto.getOptionA());
+		questionFound.setOptionB(dto.getOptionB());
+		questionFound.setOptionC(dto.getOptionC());
+		questionFound.setOptionD(dto.getOptionD());
+		questionFound.setCorrectAnswer(dto.getCorrectAnswer());
+		questionFound.setCategory(dto.getCategory());
+		questionFound.setDeficultyLevel(dto.getDeficultyLevel());
+		questionFound.setQuestionNumber(questionNumber);
 
-		try {
-			return questionRepository.save(existing);
-		} catch (DataIntegrityViolationException ex) {
-			throw new DataIntegrityViolationException("Failed to update: Question number must remain unique");
-		}
-	}
-
-	
-
-	@Override
-	public List<Question> findByCategory(String category) {
-		// TODO Auto-generated method stub
-		return this.questionRepository.findByCategory(category);
+		Question updatedQuestion = questionRepository.save(questionFound);
+		return new ApiResponse<>(SUCCESS, QUESTION_UPDATED, updatedQuestion);
 	}
 
 	@Override
-	public List<Question> findByDeficultyLevel(DifficultyLevel deficultyLevel) {
-	         return questionRepository.findByDeficultyLevel(deficultyLevel);
+	public ApiResponse<List<Question>> findByCategory(String category) {
+		List<Question> questions = questionRepository.findByCategory(category);
+		return new ApiResponse<>(SUCCESS, DATA_FOUND, questions);
 	}
+
+	@Override
+	public ApiResponse<List<Question>> findByDeficultyLevel(DifficultyLevel deficultyLevel) {
+		List<Question> questions = questionRepository.findByDeficultyLevel(deficultyLevel);
+		return new ApiResponse<>(SUCCESS, DATA_FOUND, questions);
+	}
+
 }
