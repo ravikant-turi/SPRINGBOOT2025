@@ -1,0 +1,36 @@
+so suggest me the linkdin post of quiz backend rest api app , i used spring boot with proper file sturcture and log contant message and all the global exceptiona and all the things which you also know , swagger too, and a quiz application where question can be added and or deleted all the crud operation questions can be foudn vai category , topic and can be create the quiz ont the basis of topic and evelautaed also and difficulty level wise we search and create the quiz
+
+✅ Suggested LinkedIn Post
+🚀 Just launched my Quiz Backend REST API project! Built with Spring Boot, this application is a fully functional backend for managing and evaluating quizzes — designed with scalability, clean architecture, and best practices in mind.
+
+🔧 Tech Highlights:
+
+✅ Spring Boot with layered architecture (Controller, Service, Repository)
+
+✅ DTOs for clean API contracts and validation
+
+✅ Centralized logging using SLF4J + Logback with custom log messages
+
+✅ Global exception handling with @ControllerAdvice
+
+✅ Swagger/OpenAPI integration for live API documentation
+
+✅ Modular file structure for maintainability and clarity
+
+📚 Core Features:
+
+➕ Add, update, delete, and fetch quiz questions (CRUD)
+
+🔍 Search questions by category, topic, and difficulty level
+
+🧠 Create dynamic quizzes based on topic and difficulty
+
+📝 Submit and evaluate quizzes with scoring logic
+
+📦 Standardized API responses using a generic ApiResponse<T> wrapper
+
+💡 Whether you're building a quiz platform, learning Spring Boot, or exploring RESTful design — this project is a great reference for clean backend development.
+
+📂 Codebase is structured for readability, extensibility, and testability. 📸 Swagger UI makes it easy to explore and test endpoints.
+
+👉 Would love feedback or collaboration ideas! #SpringBoot #RESTAPI #BackendDevelopment #JavaDeveloper #QuizApp #Swagger #CleanCode #DTO #Logging #ExceptionHandling #OpenSource #TechProject #LinkedInTech
