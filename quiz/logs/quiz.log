@@ -1,0 +1,39 @@
+2025-10-13T10:08:30.495+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Starting QuizApplication using Java 24.0.1 with PID 23904 (C:\SPRINGBOOT\quiz\target\classes started by ravikantt in C:\SPRINGBOOT\quiz)
+2025-10-13T10:08:30.496+05:30 DEBUG 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T10:08:30.496+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T10:08:30.644+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-13T10:08:30.659+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2025-10-13T10:08:30.702+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-10-13T10:08:30.702+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T10:08:30.702+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T10:08:30.725+05:30  INFO 23904 --- [quiz] [restartedMain] o.a.c.c.C.[Tomcat-137].[localhost].[/]   : Initializing Spring embedded WebApplicationContext
+2025-10-13T10:08:30.725+05:30  INFO 23904 --- [quiz] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 228 ms
+2025-10-13T10:08:30.743+05:30  INFO 23904 --- [quiz] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-13T10:08:30.746+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-13T10:08:30.751+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-13T10:08:30.752+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-435 - Starting...
+2025-10-13T10:08:30.761+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-435 - Added connection com.mysql.cj.jdbc.ConnectionImpl@343dd7b1
+2025-10-13T10:08:30.761+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-435 - Start completed.
+2025-10-13T10:08:30.761+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-13T10:08:30.761+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-13T10:08:30.762+05:30  INFO 23904 --- [quiz] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-435)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-13T10:08:30.789+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-13T10:08:30.799+05:30  INFO 23904 --- [quiz] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:08:30.845+05:30  WARN 23904 --- [quiz] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-13T10:08:30.884+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-13T10:08:30.888+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-10-13T10:08:30.890+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Started QuizApplication in 0.426 seconds (process running for 240860.753)
+2025-10-13T10:08:30.892+05:30  INFO 23904 --- [quiz] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-13T10:08:32.366+05:30  INFO 23904 --- [quiz] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-13T10:08:32.368+05:30  INFO 23904 --- [quiz] [Thread-1659] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-13T10:08:32.376+05:30  INFO 23904 --- [quiz] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-13T10:08:32.378+05:30  INFO 23904 --- [quiz] [Thread-1659] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:08:32.378+05:30  INFO 23904 --- [quiz] [Thread-1659] com.zaxxer.hikari.HikariDataSource       : HikariPool-435 - Shutdown initiated...
+2025-10-13T10:08:32.380+05:30  INFO 23904 --- [quiz] [Thread-1659] com.zaxxer.hikari.HikariDataSource       : HikariPool-435 - Shutdown completed.

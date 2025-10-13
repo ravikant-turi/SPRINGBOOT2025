@@ -1,4 +1,5 @@
 package com.java.quiz.controller;
+
 import com.java.quiz.entity.DifficultyLevel;
 import com.java.quiz.entity.Question;
 import com.java.quiz.payload.ApiResponse;
@@ -9,8 +10,13 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.List;
 import java.util.stream.Collectors;
+
+import static com.java.quiz.constants.MessageConstants.*;
 
 @RestController
 @RequestMapping("/api/questions")
@@ -22,73 +28,67 @@ public class QuestionController {
 	@Autowired
 	private ModelMapper modelMapper;
 
-	// Create a new question
+	private static final Logger logger = LoggerFactory.getLogger(QuestionController.class);
+
 	@PostMapping
 	public ResponseEntity<ApiResponse<Question>> createQuestion(@Valid @RequestBody QuestionDTO dto) {
-		Question question = questionService.createQuestion(dto);
-		ApiResponse<Question> response = new ApiResponse<>("SUCCESS", "Question created successfully", question);
-		return ResponseEntity.ok(response);
+		logger.info("Creating question: {}", dto.getContent());
+		Question question = questionService.createQuestion(dto).getData();
+		return ResponseEntity.ok(new ApiResponse<>(SUCCESS, QUESTION_CREATED, question));
 	}
 
-	// Get all questions
 	@GetMapping
 	public ResponseEntity<ApiResponse<List<QuestionDTO>>> getAllQuestions() {
-		List<Question> questions = questionService.getAllQuestions();
+		logger.info("Fetching all questions");
+		List<Question> questions = questionService.getAllQuestions().getData();
 		List<QuestionDTO> dtos = questions.stream().map(q -> modelMapper.map(q, QuestionDTO.class))
 				.collect(Collectors.toList());
-		ApiResponse<List<QuestionDTO>> response = new ApiResponse<>("SUCCESS", "Questions fetched successfully", dtos);
-		return ResponseEntity.ok(response);
+		return ResponseEntity.ok(new ApiResponse<>(SUCCESS, DATA_FOUND, dtos));
 	}
 
-	// Get question by ID
 	@GetMapping("/{id}")
 	public ResponseEntity<ApiResponse<QuestionDTO>> getQuestionById(@PathVariable Long id) {
-		Question question = questionService.getQuestionById(id);
+		logger.info("Fetching question by ID: {}", id);
+		Question question = questionService.getQuestionById(id).getData();
 		QuestionDTO dto = modelMapper.map(question, QuestionDTO.class);
-		ApiResponse<QuestionDTO> response = new ApiResponse<>("SUCCESS", "Question fetched successfully", dto);
-		return ResponseEntity.ok(response);
+		return ResponseEntity.ok(new ApiResponse<>(SUCCESS, DATA_FOUND, dto));
 	}
 
-	// Get question by questionNumber
 	@GetMapping("/number/{questionNumber}")
 	public ResponseEntity<ApiResponse<QuestionDTO>> getByQuestionNumber(@PathVariable Long questionNumber) {
-		Question question = questionService.getQuestionByQuestionNumber(questionNumber);
+		logger.info("Fetching question by number: {}", questionNumber);
+		Question question = questionService.getQuestionByQuestionNumber(questionNumber).getData();
 		QuestionDTO dto = modelMapper.map(question, QuestionDTO.class);
-		ApiResponse<QuestionDTO> response = new ApiResponse<>("SUCCESS", "Question fetched successfully", dto);
-		return ResponseEntity.ok(response);
+		return ResponseEntity.ok(new ApiResponse<>(SUCCESS, DATA_FOUND, dto));
 	}
 
-	// Update question by questionNumber
 	@PutMapping("/number/{questionNumber}")
 	public ResponseEntity<ApiResponse<QuestionDTO>> updateByQuestionNumber(@PathVariable Long questionNumber,
 			@Valid @RequestBody QuestionDTO dto) {
-		Question updated = questionService.updateQuestionByQuestionNumber(questionNumber, dto);
+		logger.info("Updating question number: {}", questionNumber);
+		Question updated = questionService.updateQuestionByQuestionNumber(questionNumber, dto).getData();
 		QuestionDTO updatedDto = modelMapper.map(updated, QuestionDTO.class);
-		ApiResponse<QuestionDTO> response = new ApiResponse<>("SUCCESS", "Question updated successfully", updatedDto);
-		return ResponseEntity.ok(response);
+		return ResponseEntity.ok(new ApiResponse<>(SUCCESS, QUESTION_UPDATED, updatedDto));
 	}
 
-	// Delete question by ID
 	@DeleteMapping("/{id}")
 	public ResponseEntity<ApiResponse<String>> deleteQuestion(@PathVariable Long id) {
-		questionService.deleteQuestion(id);
-		ApiResponse<String> response = new ApiResponse<>("SUCCESS", "Question deleted successfully", null);
+		logger.info("Deleting question ID: {}", id);
+		ApiResponse<String> response = questionService.deleteQuestion(id);
 		return ResponseEntity.ok(response);
 	}
 
 	@GetMapping("/category/{category}")
 	public ResponseEntity<ApiResponse<List<Question>>> getByCategory(@PathVariable String category) {
-		List<Question> questions = questionService.findByCategory(category);
-		ApiResponse<List<Question>> response = new ApiResponse<>("SUCCESS", "Data is Found", questions);
-
+		logger.info("Fetching questions by category: {}", category);
+		ApiResponse<List<Question>> response = questionService.findByCategory(category);
 		return ResponseEntity.ok(response);
 	}
 
 	@GetMapping("/difficulty/{level}")
 	public ResponseEntity<ApiResponse<List<Question>>> getByDifficulty(@PathVariable DifficultyLevel level) {
-		List<Question> questions = questionService.findByDeficultyLevel(level);
-		ApiResponse<List<Question>> response = new ApiResponse<>("SUCCESS", "Data is Found", questions);
+		logger.info("Fetching questions by difficulty level: {}", level);
+		ApiResponse<List<Question>> response = questionService.findByDeficultyLevel(level);
 		return ResponseEntity.ok(response);
 	}
-
 }

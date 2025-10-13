@@ -1,0 +1,1085 @@
+2025-10-13T10:08:32.531+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Starting QuizApplication using Java 24.0.1 with PID 23904 (C:\SPRINGBOOT\quiz\target\classes started by ravikantt in C:\SPRINGBOOT\quiz)
+2025-10-13T10:08:32.532+05:30 DEBUG 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T10:08:32.532+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T10:08:32.776+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-13T10:08:32.804+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2025-10-13T10:08:32.863+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-10-13T10:08:32.864+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T10:08:32.864+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T10:08:32.888+05:30  INFO 23904 --- [quiz] [restartedMain] o.a.c.c.C.[Tomcat-137].[localhost].[/]   : Initializing Spring embedded WebApplicationContext
+2025-10-13T10:08:32.889+05:30  INFO 23904 --- [quiz] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 355 ms
+2025-10-13T10:08:32.905+05:30  INFO 23904 --- [quiz] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-13T10:08:32.907+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-13T10:08:32.913+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-13T10:08:32.914+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-436 - Starting...
+2025-10-13T10:08:32.920+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-436 - Added connection com.mysql.cj.jdbc.ConnectionImpl@afe24e1
+2025-10-13T10:08:32.920+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-436 - Start completed.
+2025-10-13T10:08:32.920+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-13T10:08:32.921+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-13T10:08:32.921+05:30  INFO 23904 --- [quiz] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-436)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-13T10:08:32.945+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-13T10:08:32.956+05:30  INFO 23904 --- [quiz] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:08:33.005+05:30  WARN 23904 --- [quiz] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-13T10:08:33.044+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-13T10:08:33.049+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-10-13T10:08:33.052+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Started QuizApplication in 0.553 seconds (process running for 240862.913)
+2025-10-13T10:08:33.052+05:30  INFO 23904 --- [quiz] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-13T10:08:52.023+05:30  INFO 23904 --- [quiz] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 24 class path changes (0 additions, 0 deletions, 24 modifications)
+2025-10-13T10:08:52.024+05:30  INFO 23904 --- [quiz] [Thread-1663] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-13T10:08:52.033+05:30  INFO 23904 --- [quiz] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-13T10:08:52.034+05:30  INFO 23904 --- [quiz] [Thread-1663] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:08:52.034+05:30  INFO 23904 --- [quiz] [Thread-1663] com.zaxxer.hikari.HikariDataSource       : HikariPool-436 - Shutdown initiated...
+2025-10-13T10:08:52.043+05:30  INFO 23904 --- [quiz] [Thread-1663] com.zaxxer.hikari.HikariDataSource       : HikariPool-436 - Shutdown completed.
+2025-10-13T10:08:52.171+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Starting QuizApplication using Java 24.0.1 with PID 23904 (C:\SPRINGBOOT\quiz\target\classes started by ravikantt in C:\SPRINGBOOT\quiz)
+2025-10-13T10:08:52.171+05:30 DEBUG 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T10:08:52.171+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T10:08:52.311+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-13T10:08:52.321+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 2 JPA repository interfaces.
+2025-10-13T10:08:52.361+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-10-13T10:08:52.361+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T10:08:52.361+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T10:08:52.389+05:30  INFO 23904 --- [quiz] [restartedMain] o.a.c.c.C.[Tomcat-137].[localhost].[/]   : Initializing Spring embedded WebApplicationContext
+2025-10-13T10:08:52.389+05:30  INFO 23904 --- [quiz] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 216 ms
+2025-10-13T10:08:52.403+05:30  INFO 23904 --- [quiz] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-13T10:08:52.406+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-13T10:08:52.411+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-13T10:08:52.412+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-437 - Starting...
+2025-10-13T10:08:52.421+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-437 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2eeaeb40
+2025-10-13T10:08:52.421+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-437 - Start completed.
+2025-10-13T10:08:52.422+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-13T10:08:52.422+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-13T10:08:52.422+05:30  INFO 23904 --- [quiz] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-437)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-13T10:08:52.453+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-13T10:08:52.466+05:30  INFO 23904 --- [quiz] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:08:52.517+05:30  WARN 23904 --- [quiz] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-13T10:08:52.562+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-13T10:08:52.573+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-10-13T10:08:52.575+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Started QuizApplication in 0.429 seconds (process running for 240882.437)
+2025-10-13T10:08:52.576+05:30  INFO 23904 --- [quiz] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-13T10:08:56.118+05:30  INFO 23904 --- [quiz] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-13T10:08:56.120+05:30  INFO 23904 --- [quiz] [Thread-1667] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-13T10:08:56.126+05:30  INFO 23904 --- [quiz] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-13T10:08:56.126+05:30  INFO 23904 --- [quiz] [Thread-1667] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:08:56.127+05:30  INFO 23904 --- [quiz] [Thread-1667] com.zaxxer.hikari.HikariDataSource       : HikariPool-437 - Shutdown initiated...
+2025-10-13T10:08:56.129+05:30  INFO 23904 --- [quiz] [Thread-1667] com.zaxxer.hikari.HikariDataSource       : HikariPool-437 - Shutdown completed.
+2025-10-13T10:08:56.231+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Starting QuizApplication using Java 24.0.1 with PID 23904 (C:\SPRINGBOOT\quiz\target\classes started by ravikantt in C:\SPRINGBOOT\quiz)
+2025-10-13T10:08:56.232+05:30 DEBUG 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T10:08:56.232+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T10:08:56.357+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-13T10:08:56.367+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 2 JPA repository interfaces.
+2025-10-13T10:08:56.406+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-10-13T10:08:56.407+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T10:08:56.407+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T10:08:56.435+05:30  INFO 23904 --- [quiz] [restartedMain] o.a.c.c.C.[Tomcat-137].[localhost].[/]   : Initializing Spring embedded WebApplicationContext
+2025-10-13T10:08:56.435+05:30  INFO 23904 --- [quiz] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 202 ms
+2025-10-13T10:08:56.452+05:30  INFO 23904 --- [quiz] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-13T10:08:56.454+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-13T10:08:56.459+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-13T10:08:56.460+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-438 - Starting...
+2025-10-13T10:08:56.470+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-438 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7313109c
+2025-10-13T10:08:56.470+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-438 - Start completed.
+2025-10-13T10:08:56.471+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-13T10:08:56.471+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-13T10:08:56.471+05:30  INFO 23904 --- [quiz] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-438)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-13T10:08:56.498+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-13T10:08:56.511+05:30  INFO 23904 --- [quiz] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:08:56.518+05:30  WARN 23904 --- [quiz] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'questionController': Unsatisfied dependency expressed through field 'questionService': Error creating bean with name 'questionServiceImpl' defined in file [C:\SPRINGBOOT\quiz\target\classes\com\java\quiz\service\impl\QuestionServiceImpl.class]: Failed to instantiate [com.java.quiz.service.impl.QuestionServiceImpl]: Constructor threw exception
+2025-10-13T10:08:56.519+05:30  INFO 23904 --- [quiz] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:08:56.519+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-438 - Shutdown initiated...
+2025-10-13T10:08:56.520+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-438 - Shutdown completed.
+2025-10-13T10:08:56.520+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-13T10:08:56.524+05:30  INFO 23904 --- [quiz] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-13T10:08:56.528+05:30 ERROR 23904 --- [quiz] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'questionController': Unsatisfied dependency expressed through field 'questionService': Error creating bean with name 'questionServiceImpl' defined in file [C:\SPRINGBOOT\quiz\target\classes\com\java\quiz\service\impl\QuestionServiceImpl.class]: Failed to instantiate [com.java.quiz.service.impl.QuestionServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1221) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1187) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.6.jar:3.5.6]
+	at com.java.quiz.QuizApplication.main(QuizApplication.java:11) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.6.jar:3.5.6]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'questionServiceImpl' defined in file [C:\SPRINGBOOT\quiz\target\classes\com\java\quiz\service\impl\QuestionServiceImpl.class]: Failed to instantiate [com.java.quiz.service.impl.QuestionServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1357) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1242) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1760) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1643) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.java.quiz.service.impl.QuestionServiceImpl]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:123) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1351) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 36 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Logger cannot be resolved to a type
+	LoggerFactory cannot be resolved
+	YourServiceClass cannot be resolved to a type
+
+	at com.java.quiz.service.impl.QuestionServiceImpl.<init>(QuestionServiceImpl.java:22) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:197) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 38 common frames omitted
+
+2025-10-13T10:09:11.475+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Starting QuizApplication using Java 24.0.1 with PID 23904 (C:\SPRINGBOOT\quiz\target\classes started by ravikantt in C:\SPRINGBOOT\quiz)
+2025-10-13T10:09:11.475+05:30 DEBUG 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T10:09:11.475+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T10:09:11.740+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-13T10:09:11.751+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 2 JPA repository interfaces.
+2025-10-13T10:09:11.799+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-10-13T10:09:11.800+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T10:09:11.800+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T10:09:11.825+05:30  INFO 23904 --- [quiz] [restartedMain] o.a.c.c.C.[Tomcat-138].[localhost].[/]   : Initializing Spring embedded WebApplicationContext
+2025-10-13T10:09:11.825+05:30  INFO 23904 --- [quiz] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 349 ms
+2025-10-13T10:09:11.847+05:30  INFO 23904 --- [quiz] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-13T10:09:11.849+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-13T10:09:11.855+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-13T10:09:11.856+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-439 - Starting...
+2025-10-13T10:09:11.865+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-439 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3b9f1542
+2025-10-13T10:09:11.865+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-439 - Start completed.
+2025-10-13T10:09:11.866+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-13T10:09:11.866+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-13T10:09:11.866+05:30  INFO 23904 --- [quiz] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-439)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-13T10:09:11.898+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-13T10:09:11.911+05:30  INFO 23904 --- [quiz] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:09:11.917+05:30  WARN 23904 --- [quiz] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'questionController': Unsatisfied dependency expressed through field 'questionService': Error creating bean with name 'questionServiceImpl' defined in file [C:\SPRINGBOOT\quiz\target\classes\com\java\quiz\service\impl\QuestionServiceImpl.class]: Failed to instantiate [com.java.quiz.service.impl.QuestionServiceImpl]: Constructor threw exception
+2025-10-13T10:09:11.917+05:30  INFO 23904 --- [quiz] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:09:11.917+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-439 - Shutdown initiated...
+2025-10-13T10:09:11.918+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-439 - Shutdown completed.
+2025-10-13T10:09:11.918+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-13T10:09:11.921+05:30  INFO 23904 --- [quiz] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-13T10:09:11.923+05:30 ERROR 23904 --- [quiz] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'questionController': Unsatisfied dependency expressed through field 'questionService': Error creating bean with name 'questionServiceImpl' defined in file [C:\SPRINGBOOT\quiz\target\classes\com\java\quiz\service\impl\QuestionServiceImpl.class]: Failed to instantiate [com.java.quiz.service.impl.QuestionServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1221) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1187) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.6.jar:3.5.6]
+	at com.java.quiz.QuizApplication.main(QuizApplication.java:11) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.6.jar:3.5.6]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'questionServiceImpl' defined in file [C:\SPRINGBOOT\quiz\target\classes\com\java\quiz\service\impl\QuestionServiceImpl.class]: Failed to instantiate [com.java.quiz.service.impl.QuestionServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1357) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1242) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1760) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1643) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.java.quiz.service.impl.QuestionServiceImpl]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:123) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1351) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 36 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.sun.org cannot be resolved
+	LoggerFactory cannot be resolved
+	YourServiceClass cannot be resolved to a type
+
+	at com.java.quiz.service.impl.QuestionServiceImpl.<init>(QuestionServiceImpl.java:25) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:197) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 38 common frames omitted
+
+2025-10-13T10:09:37.549+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Starting QuizApplication using Java 24.0.1 with PID 23904 (C:\SPRINGBOOT\quiz\target\classes started by ravikantt in C:\SPRINGBOOT\quiz)
+2025-10-13T10:09:37.549+05:30 DEBUG 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T10:09:37.549+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T10:09:37.688+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-13T10:09:37.697+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2025-10-13T10:09:37.731+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-10-13T10:09:37.731+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T10:09:37.731+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T10:09:37.760+05:30  INFO 23904 --- [quiz] [restartedMain] o.a.c.c.C.[Tomcat-139].[localhost].[/]   : Initializing Spring embedded WebApplicationContext
+2025-10-13T10:09:37.760+05:30  INFO 23904 --- [quiz] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 209 ms
+2025-10-13T10:09:37.777+05:30  INFO 23904 --- [quiz] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-13T10:09:37.779+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-13T10:09:37.784+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-13T10:09:37.785+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-440 - Starting...
+2025-10-13T10:09:37.792+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-440 - Added connection com.mysql.cj.jdbc.ConnectionImpl@fb3bfca
+2025-10-13T10:09:37.792+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-440 - Start completed.
+2025-10-13T10:09:37.792+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-13T10:09:37.792+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-13T10:09:37.792+05:30  INFO 23904 --- [quiz] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-440)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-13T10:09:37.815+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-13T10:09:37.826+05:30  INFO 23904 --- [quiz] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:09:37.834+05:30  WARN 23904 --- [quiz] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'questionController': Unsatisfied dependency expressed through field 'questionService': Error creating bean with name 'questionServiceImpl' defined in file [C:\SPRINGBOOT\quiz\target\classes\com\java\quiz\service\impl\QuestionServiceImpl.class]: Failed to instantiate [com.java.quiz.service.impl.QuestionServiceImpl]: Constructor threw exception
+2025-10-13T10:09:37.834+05:30  INFO 23904 --- [quiz] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:09:37.835+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-440 - Shutdown initiated...
+2025-10-13T10:09:37.835+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-440 - Shutdown completed.
+2025-10-13T10:09:37.836+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-13T10:09:37.839+05:30  INFO 23904 --- [quiz] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-13T10:09:37.842+05:30 ERROR 23904 --- [quiz] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'questionController': Unsatisfied dependency expressed through field 'questionService': Error creating bean with name 'questionServiceImpl' defined in file [C:\SPRINGBOOT\quiz\target\classes\com\java\quiz\service\impl\QuestionServiceImpl.class]: Failed to instantiate [com.java.quiz.service.impl.QuestionServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1221) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1187) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.6.jar:3.5.6]
+	at com.java.quiz.QuizApplication.main(QuizApplication.java:11) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.6.jar:3.5.6]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'questionServiceImpl' defined in file [C:\SPRINGBOOT\quiz\target\classes\com\java\quiz\service\impl\QuestionServiceImpl.class]: Failed to instantiate [com.java.quiz.service.impl.QuestionServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1357) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1242) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1760) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1643) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.java.quiz.service.impl.QuestionServiceImpl]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:123) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1351) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 36 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	LoggerFactory cannot be resolved
+	YourServiceClass cannot be resolved to a type
+
+	at com.java.quiz.service.impl.QuestionServiceImpl.<init>(QuestionServiceImpl.java:35) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:197) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 38 common frames omitted
+
+2025-10-13T10:09:45.726+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Starting QuizApplication using Java 24.0.1 with PID 23904 (C:\SPRINGBOOT\quiz\target\classes started by ravikantt in C:\SPRINGBOOT\quiz)
+2025-10-13T10:09:45.727+05:30 DEBUG 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T10:09:45.727+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T10:09:45.845+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-13T10:09:45.855+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2025-10-13T10:09:45.890+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-10-13T10:09:45.890+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T10:09:45.890+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T10:09:45.912+05:30  INFO 23904 --- [quiz] [restartedMain] o.a.c.c.C.[Tomcat-140].[localhost].[/]   : Initializing Spring embedded WebApplicationContext
+2025-10-13T10:09:45.912+05:30  INFO 23904 --- [quiz] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 184 ms
+2025-10-13T10:09:45.928+05:30  INFO 23904 --- [quiz] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-13T10:09:45.930+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-13T10:09:45.934+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-13T10:09:45.934+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-441 - Starting...
+2025-10-13T10:09:45.940+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-441 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f023445
+2025-10-13T10:09:45.940+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-441 - Start completed.
+2025-10-13T10:09:45.941+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-13T10:09:45.941+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-13T10:09:45.941+05:30  INFO 23904 --- [quiz] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-441)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-13T10:09:45.966+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-13T10:09:45.981+05:30  INFO 23904 --- [quiz] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:09:45.987+05:30  WARN 23904 --- [quiz] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'questionController': Unsatisfied dependency expressed through field 'questionService': Error creating bean with name 'questionServiceImpl' defined in file [C:\SPRINGBOOT\quiz\target\classes\com\java\quiz\service\impl\QuestionServiceImpl.class]: Failed to instantiate [com.java.quiz.service.impl.QuestionServiceImpl]: Constructor threw exception
+2025-10-13T10:09:45.987+05:30  INFO 23904 --- [quiz] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:09:45.987+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-441 - Shutdown initiated...
+2025-10-13T10:09:45.988+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-441 - Shutdown completed.
+2025-10-13T10:09:45.988+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-13T10:09:45.991+05:30  INFO 23904 --- [quiz] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-13T10:09:45.994+05:30 ERROR 23904 --- [quiz] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'questionController': Unsatisfied dependency expressed through field 'questionService': Error creating bean with name 'questionServiceImpl' defined in file [C:\SPRINGBOOT\quiz\target\classes\com\java\quiz\service\impl\QuestionServiceImpl.class]: Failed to instantiate [com.java.quiz.service.impl.QuestionServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1221) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1187) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.6.jar:3.5.6]
+	at com.java.quiz.QuizApplication.main(QuizApplication.java:11) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.6.jar:3.5.6]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'questionServiceImpl' defined in file [C:\SPRINGBOOT\quiz\target\classes\com\java\quiz\service\impl\QuestionServiceImpl.class]: Failed to instantiate [com.java.quiz.service.impl.QuestionServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1357) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1242) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1760) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1643) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.java.quiz.service.impl.QuestionServiceImpl]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:123) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1351) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 36 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Syntax error on token(s), misplaced construct(s)
+	Illegal modifier for the class QuestionServiceImpl; only public, abstract & final are permitted
+	YourServiceClass cannot be resolved to a type
+
+	at com.java.quiz.service.impl.QuestionServiceImpl.<init>(QuestionServiceImpl.java:1) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:197) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 38 common frames omitted
+
+2025-10-13T10:09:51.649+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Starting QuizApplication using Java 24.0.1 with PID 23904 (C:\SPRINGBOOT\quiz\target\classes started by ravikantt in C:\SPRINGBOOT\quiz)
+2025-10-13T10:09:51.649+05:30 DEBUG 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T10:09:51.649+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T10:09:51.769+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-13T10:09:51.779+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 2 JPA repository interfaces.
+2025-10-13T10:09:51.814+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-10-13T10:09:51.814+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T10:09:51.814+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T10:09:51.837+05:30  INFO 23904 --- [quiz] [restartedMain] o.a.c.c.C.[Tomcat-141].[localhost].[/]   : Initializing Spring embedded WebApplicationContext
+2025-10-13T10:09:51.837+05:30  INFO 23904 --- [quiz] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 187 ms
+2025-10-13T10:09:51.853+05:30  INFO 23904 --- [quiz] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-13T10:09:51.857+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-13T10:09:51.861+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-13T10:09:51.861+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-442 - Starting...
+2025-10-13T10:09:51.868+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-442 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70c818e
+2025-10-13T10:09:51.868+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-442 - Start completed.
+2025-10-13T10:09:51.868+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-13T10:09:51.868+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-13T10:09:51.868+05:30  INFO 23904 --- [quiz] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-442)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-13T10:09:51.891+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-13T10:09:51.904+05:30  INFO 23904 --- [quiz] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:09:51.912+05:30  WARN 23904 --- [quiz] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'questionController': Unsatisfied dependency expressed through field 'questionService': Error creating bean with name 'questionServiceImpl' defined in file [C:\SPRINGBOOT\quiz\target\classes\com\java\quiz\service\impl\QuestionServiceImpl.class]: Failed to instantiate [com.java.quiz.service.impl.QuestionServiceImpl]: Constructor threw exception
+2025-10-13T10:09:51.912+05:30  INFO 23904 --- [quiz] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:09:51.913+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-442 - Shutdown initiated...
+2025-10-13T10:09:51.913+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-442 - Shutdown completed.
+2025-10-13T10:09:51.913+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-13T10:09:51.918+05:30  INFO 23904 --- [quiz] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-13T10:09:51.921+05:30 ERROR 23904 --- [quiz] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'questionController': Unsatisfied dependency expressed through field 'questionService': Error creating bean with name 'questionServiceImpl' defined in file [C:\SPRINGBOOT\quiz\target\classes\com\java\quiz\service\impl\QuestionServiceImpl.class]: Failed to instantiate [com.java.quiz.service.impl.QuestionServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1221) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1187) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.6.jar:3.5.6]
+	at com.java.quiz.QuizApplication.main(QuizApplication.java:11) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.6.jar:3.5.6]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'questionServiceImpl' defined in file [C:\SPRINGBOOT\quiz\target\classes\com\java\quiz\service\impl\QuestionServiceImpl.class]: Failed to instantiate [com.java.quiz.service.impl.QuestionServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1357) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1242) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1760) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1643) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.java.quiz.service.impl.QuestionServiceImpl]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:123) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1351) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 36 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	YourServiceClass cannot be resolved to a type
+
+	at com.java.quiz.service.impl.QuestionServiceImpl.<init>(QuestionServiceImpl.java:37) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:197) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 38 common frames omitted
+
+2025-10-13T10:09:57.541+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Starting QuizApplication using Java 24.0.1 with PID 23904 (C:\SPRINGBOOT\quiz\target\classes started by ravikantt in C:\SPRINGBOOT\quiz)
+2025-10-13T10:09:57.541+05:30 DEBUG 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T10:09:57.541+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T10:09:57.652+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-13T10:09:57.662+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 2 JPA repository interfaces.
+2025-10-13T10:09:57.699+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-10-13T10:09:57.699+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T10:09:57.699+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T10:09:57.728+05:30  INFO 23904 --- [quiz] [restartedMain] o.a.c.c.C.[Tomcat-142].[localhost].[/]   : Initializing Spring embedded WebApplicationContext
+2025-10-13T10:09:57.728+05:30  INFO 23904 --- [quiz] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 186 ms
+2025-10-13T10:09:57.745+05:30  INFO 23904 --- [quiz] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-13T10:09:57.747+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-13T10:09:57.751+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-13T10:09:57.752+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-443 - Starting...
+2025-10-13T10:09:57.761+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-443 - Added connection com.mysql.cj.jdbc.ConnectionImpl@35904690
+2025-10-13T10:09:57.761+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-443 - Start completed.
+2025-10-13T10:09:57.761+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-13T10:09:57.761+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-13T10:09:57.762+05:30  INFO 23904 --- [quiz] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-443)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-13T10:09:57.794+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-13T10:09:57.810+05:30  INFO 23904 --- [quiz] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:09:57.860+05:30  WARN 23904 --- [quiz] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-13T10:09:57.898+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-13T10:09:57.905+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-10-13T10:09:57.908+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Started QuizApplication in 0.379 seconds (process running for 240947.77)
+2025-10-13T10:09:57.909+05:30  INFO 23904 --- [quiz] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-13T10:10:00.341+05:30  INFO 23904 --- [quiz] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-13T10:10:00.342+05:30  INFO 23904 --- [quiz] [Thread-1671] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-13T10:10:00.381+05:30  INFO 23904 --- [quiz] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-13T10:10:00.382+05:30  INFO 23904 --- [quiz] [Thread-1671] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:10:00.383+05:30  INFO 23904 --- [quiz] [Thread-1671] com.zaxxer.hikari.HikariDataSource       : HikariPool-443 - Shutdown initiated...
+2025-10-13T10:10:00.386+05:30  INFO 23904 --- [quiz] [Thread-1671] com.zaxxer.hikari.HikariDataSource       : HikariPool-443 - Shutdown completed.
+2025-10-13T10:10:00.499+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Starting QuizApplication using Java 24.0.1 with PID 23904 (C:\SPRINGBOOT\quiz\target\classes started by ravikantt in C:\SPRINGBOOT\quiz)
+2025-10-13T10:10:00.499+05:30 DEBUG 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T10:10:00.499+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T10:10:00.678+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-13T10:10:00.691+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 2 JPA repository interfaces.
+2025-10-13T10:10:00.764+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-10-13T10:10:00.765+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T10:10:00.765+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T10:10:00.806+05:30  INFO 23904 --- [quiz] [restartedMain] o.a.c.c.C.[Tomcat-142].[localhost].[/]   : Initializing Spring embedded WebApplicationContext
+2025-10-13T10:10:00.806+05:30  INFO 23904 --- [quiz] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 305 ms
+2025-10-13T10:10:00.824+05:30  INFO 23904 --- [quiz] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-13T10:10:00.826+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-13T10:10:00.831+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-13T10:10:00.832+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-444 - Starting...
+2025-10-13T10:10:00.840+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-444 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39d8ccbb
+2025-10-13T10:10:00.840+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-444 - Start completed.
+2025-10-13T10:10:00.841+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-13T10:10:00.841+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-13T10:10:00.841+05:30  INFO 23904 --- [quiz] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-444)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-13T10:10:00.877+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-13T10:10:00.889+05:30  INFO 23904 --- [quiz] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:10:00.954+05:30  WARN 23904 --- [quiz] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-13T10:10:01.035+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-13T10:10:01.041+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-10-13T10:10:01.042+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Started QuizApplication in 0.56 seconds (process running for 240950.905)
+2025-10-13T10:10:01.044+05:30  INFO 23904 --- [quiz] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-13T10:11:04.633+05:30  INFO 23904 --- [quiz] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-13T10:11:04.634+05:30  INFO 23904 --- [quiz] [Thread-1690] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-13T10:11:04.638+05:30  INFO 23904 --- [quiz] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-13T10:11:04.640+05:30  INFO 23904 --- [quiz] [Thread-1690] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:11:04.640+05:30  INFO 23904 --- [quiz] [Thread-1690] com.zaxxer.hikari.HikariDataSource       : HikariPool-444 - Shutdown initiated...
+2025-10-13T10:11:04.641+05:30  INFO 23904 --- [quiz] [Thread-1690] com.zaxxer.hikari.HikariDataSource       : HikariPool-444 - Shutdown completed.
+2025-10-13T10:11:04.743+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Starting QuizApplication using Java 24.0.1 with PID 23904 (C:\SPRINGBOOT\quiz\target\classes started by ravikantt in C:\SPRINGBOOT\quiz)
+2025-10-13T10:11:04.743+05:30 DEBUG 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T10:11:04.743+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T10:11:04.866+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-13T10:11:04.875+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2025-10-13T10:11:04.913+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-10-13T10:11:04.913+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T10:11:04.913+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T10:11:04.938+05:30  INFO 23904 --- [quiz] [restartedMain] o.a.c.c.C.[Tomcat-142].[localhost].[/]   : Initializing Spring embedded WebApplicationContext
+2025-10-13T10:11:04.938+05:30  INFO 23904 --- [quiz] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 193 ms
+2025-10-13T10:11:04.952+05:30  INFO 23904 --- [quiz] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-13T10:11:04.954+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-13T10:11:04.959+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-13T10:11:04.960+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-445 - Starting...
+2025-10-13T10:11:04.968+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-445 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39487eb8
+2025-10-13T10:11:04.968+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-445 - Start completed.
+2025-10-13T10:11:04.968+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-13T10:11:04.968+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-13T10:11:04.969+05:30  INFO 23904 --- [quiz] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-445)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-13T10:11:05.000+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-13T10:11:05.011+05:30  INFO 23904 --- [quiz] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:11:05.078+05:30  WARN 23904 --- [quiz] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-13T10:11:05.140+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-13T10:11:05.147+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-10-13T10:11:05.150+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Started QuizApplication in 0.425 seconds (process running for 241015.012)
+2025-10-13T10:11:05.151+05:30  INFO 23904 --- [quiz] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-13T10:11:07.647+05:30  INFO 23904 --- [quiz] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-13T10:11:07.650+05:30  INFO 23904 --- [quiz] [Thread-1694] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-13T10:11:07.694+05:30  INFO 23904 --- [quiz] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-13T10:11:07.696+05:30  INFO 23904 --- [quiz] [Thread-1694] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:11:07.696+05:30  INFO 23904 --- [quiz] [Thread-1694] com.zaxxer.hikari.HikariDataSource       : HikariPool-445 - Shutdown initiated...
+2025-10-13T10:11:07.699+05:30  INFO 23904 --- [quiz] [Thread-1694] com.zaxxer.hikari.HikariDataSource       : HikariPool-445 - Shutdown completed.
+2025-10-13T10:11:07.917+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Starting QuizApplication using Java 24.0.1 with PID 23904 (C:\SPRINGBOOT\quiz\target\classes started by ravikantt in C:\SPRINGBOOT\quiz)
+2025-10-13T10:11:07.917+05:30 DEBUG 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T10:11:07.917+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T10:11:08.076+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-13T10:11:08.087+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 2 JPA repository interfaces.
+2025-10-13T10:11:08.125+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-10-13T10:11:08.126+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T10:11:08.126+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T10:11:08.150+05:30  INFO 23904 --- [quiz] [restartedMain] o.a.c.c.C.[Tomcat-142].[localhost].[/]   : Initializing Spring embedded WebApplicationContext
+2025-10-13T10:11:08.150+05:30  INFO 23904 --- [quiz] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 231 ms
+2025-10-13T10:11:08.164+05:30  INFO 23904 --- [quiz] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-13T10:11:08.166+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-13T10:11:08.171+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-13T10:11:08.172+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-446 - Starting...
+2025-10-13T10:11:08.181+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-446 - Added connection com.mysql.cj.jdbc.ConnectionImpl@8a03248
+2025-10-13T10:11:08.181+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-446 - Start completed.
+2025-10-13T10:11:08.181+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-13T10:11:08.181+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-13T10:11:08.181+05:30  INFO 23904 --- [quiz] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-446)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-13T10:11:08.212+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-13T10:11:08.227+05:30  INFO 23904 --- [quiz] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:11:08.286+05:30  WARN 23904 --- [quiz] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-13T10:11:08.334+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-13T10:11:08.340+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-10-13T10:11:08.343+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Started QuizApplication in 0.451 seconds (process running for 241018.205)
+2025-10-13T10:11:08.344+05:30  INFO 23904 --- [quiz] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-13T10:11:09.832+05:30  INFO 23904 --- [quiz] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-13T10:11:09.835+05:30  INFO 23904 --- [quiz] [Thread-1698] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-13T10:11:10.092+05:30  INFO 23904 --- [quiz] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-13T10:11:10.093+05:30  INFO 23904 --- [quiz] [Thread-1698] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:11:10.093+05:30  INFO 23904 --- [quiz] [Thread-1698] com.zaxxer.hikari.HikariDataSource       : HikariPool-446 - Shutdown initiated...
+2025-10-13T10:11:10.097+05:30  INFO 23904 --- [quiz] [Thread-1698] com.zaxxer.hikari.HikariDataSource       : HikariPool-446 - Shutdown completed.
+2025-10-13T10:11:10.410+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Starting QuizApplication using Java 24.0.1 with PID 23904 (C:\SPRINGBOOT\quiz\target\classes started by ravikantt in C:\SPRINGBOOT\quiz)
+2025-10-13T10:11:10.410+05:30 DEBUG 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T10:11:10.410+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T10:11:11.035+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-13T10:11:11.084+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+2025-10-13T10:11:11.633+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-10-13T10:11:11.634+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T10:11:11.634+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T10:11:11.718+05:30  INFO 23904 --- [quiz] [restartedMain] o.a.c.c.C.[Tomcat-142].[localhost].[/]   : Initializing Spring embedded WebApplicationContext
+2025-10-13T10:11:11.718+05:30  INFO 23904 --- [quiz] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1297 ms
+2025-10-13T10:11:11.848+05:30  INFO 23904 --- [quiz] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-13T10:11:12.092+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-13T10:11:12.373+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-13T10:11:12.375+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-447 - Starting...
+2025-10-13T10:11:12.394+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-447 - Added connection com.mysql.cj.jdbc.ConnectionImpl@40568fda
+2025-10-13T10:11:12.394+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-447 - Start completed.
+2025-10-13T10:11:12.395+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-13T10:11:12.395+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-13T10:11:12.395+05:30  INFO 23904 --- [quiz] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-447)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-13T10:11:12.560+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-13T10:11:12.591+05:30  INFO 23904 --- [quiz] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:11:13.098+05:30  WARN 23904 --- [quiz] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-13T10:11:13.407+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-13T10:11:13.420+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-10-13T10:11:13.425+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Started QuizApplication in 3.115 seconds (process running for 241023.287)
+2025-10-13T10:11:13.426+05:30  INFO 23904 --- [quiz] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-13T10:11:14.854+05:30  INFO 23904 --- [quiz] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-13T10:11:14.856+05:30  INFO 23904 --- [quiz] [Thread-1702] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-13T10:11:14.885+05:30  INFO 23904 --- [quiz] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-13T10:11:14.886+05:30  INFO 23904 --- [quiz] [Thread-1702] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:11:14.888+05:30  INFO 23904 --- [quiz] [Thread-1702] com.zaxxer.hikari.HikariDataSource       : HikariPool-447 - Shutdown initiated...
+2025-10-13T10:11:14.895+05:30  INFO 23904 --- [quiz] [Thread-1702] com.zaxxer.hikari.HikariDataSource       : HikariPool-447 - Shutdown completed.
+2025-10-13T10:11:15.096+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Starting QuizApplication using Java 24.0.1 with PID 23904 (C:\SPRINGBOOT\quiz\target\classes started by ravikantt in C:\SPRINGBOOT\quiz)
+2025-10-13T10:11:15.097+05:30 DEBUG 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T10:11:15.097+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T10:11:15.334+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-13T10:11:15.350+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2025-10-13T10:11:15.461+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-10-13T10:11:15.462+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T10:11:15.462+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T10:11:15.517+05:30  INFO 23904 --- [quiz] [restartedMain] o.a.c.c.C.[Tomcat-142].[localhost].[/]   : Initializing Spring embedded WebApplicationContext
+2025-10-13T10:11:15.517+05:30  INFO 23904 --- [quiz] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 416 ms
+2025-10-13T10:11:15.542+05:30  INFO 23904 --- [quiz] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-13T10:11:15.545+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-13T10:11:15.554+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-13T10:11:15.555+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-448 - Starting...
+2025-10-13T10:11:15.568+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-448 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30eab2e9
+2025-10-13T10:11:15.569+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-448 - Start completed.
+2025-10-13T10:11:15.569+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-13T10:11:15.569+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-13T10:11:15.570+05:30  INFO 23904 --- [quiz] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-448)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-13T10:11:15.614+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-13T10:11:15.631+05:30  INFO 23904 --- [quiz] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:11:15.774+05:30  WARN 23904 --- [quiz] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-13T10:11:15.991+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-13T10:11:16.004+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-10-13T10:11:16.006+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Started QuizApplication in 0.958 seconds (process running for 241025.869)
+2025-10-13T10:11:16.007+05:30  INFO 23904 --- [quiz] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-13T10:36:58.948+05:30  INFO 23904 --- [quiz] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-13T10:36:58.975+05:30  INFO 23904 --- [quiz] [Thread-1706] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-13T10:36:59.003+05:30  INFO 23904 --- [quiz] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-13T10:36:59.005+05:30  INFO 23904 --- [quiz] [Thread-1706] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:36:59.006+05:30  INFO 23904 --- [quiz] [Thread-1706] com.zaxxer.hikari.HikariDataSource       : HikariPool-448 - Shutdown initiated...
+2025-10-13T10:36:59.009+05:30  INFO 23904 --- [quiz] [Thread-1706] com.zaxxer.hikari.HikariDataSource       : HikariPool-448 - Shutdown completed.
+2025-10-13T10:36:59.127+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Starting QuizApplication using Java 24.0.1 with PID 23904 (C:\SPRINGBOOT\quiz\target\classes started by ravikantt in C:\SPRINGBOOT\quiz)
+2025-10-13T10:36:59.127+05:30 DEBUG 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T10:36:59.127+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T10:36:59.263+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-13T10:36:59.276+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2025-10-13T10:36:59.327+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-10-13T10:36:59.327+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T10:36:59.327+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T10:36:59.353+05:30  INFO 23904 --- [quiz] [restartedMain] o.a.c.c.C.[Tomcat-142].[localhost].[/]   : Initializing Spring embedded WebApplicationContext
+2025-10-13T10:36:59.353+05:30  INFO 23904 --- [quiz] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 225 ms
+2025-10-13T10:36:59.366+05:30  INFO 23904 --- [quiz] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-13T10:36:59.368+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-13T10:36:59.372+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-13T10:36:59.373+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-449 - Starting...
+2025-10-13T10:36:59.382+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-449 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20307760
+2025-10-13T10:36:59.382+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-449 - Start completed.
+2025-10-13T10:36:59.382+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-13T10:36:59.382+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-13T10:36:59.382+05:30  INFO 23904 --- [quiz] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-449)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-13T10:36:59.408+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-13T10:36:59.418+05:30  INFO 23904 --- [quiz] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:36:59.461+05:30  WARN 23904 --- [quiz] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-13T10:36:59.499+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-13T10:36:59.504+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-10-13T10:36:59.506+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Started QuizApplication in 0.409 seconds (process running for 242569.369)
+2025-10-13T10:36:59.507+05:30  INFO 23904 --- [quiz] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-13T10:37:08.118+05:30  INFO 23904 --- [quiz] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-13T10:37:08.119+05:30  INFO 23904 --- [quiz] [Thread-1710] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-13T10:37:08.126+05:30  INFO 23904 --- [quiz] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-13T10:37:08.128+05:30  INFO 23904 --- [quiz] [Thread-1710] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:37:08.128+05:30  INFO 23904 --- [quiz] [Thread-1710] com.zaxxer.hikari.HikariDataSource       : HikariPool-449 - Shutdown initiated...
+2025-10-13T10:37:08.130+05:30  INFO 23904 --- [quiz] [Thread-1710] com.zaxxer.hikari.HikariDataSource       : HikariPool-449 - Shutdown completed.
+2025-10-13T10:37:08.273+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Starting QuizApplication using Java 24.0.1 with PID 23904 (C:\SPRINGBOOT\quiz\target\classes started by ravikantt in C:\SPRINGBOOT\quiz)
+2025-10-13T10:37:08.273+05:30 DEBUG 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T10:37:08.274+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T10:37:08.396+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-13T10:37:08.408+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 2 JPA repository interfaces.
+2025-10-13T10:37:08.511+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-10-13T10:37:08.511+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T10:37:08.511+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T10:37:08.542+05:30  INFO 23904 --- [quiz] [restartedMain] o.a.c.c.C.[Tomcat-142].[localhost].[/]   : Initializing Spring embedded WebApplicationContext
+2025-10-13T10:37:08.542+05:30  INFO 23904 --- [quiz] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 267 ms
+2025-10-13T10:37:08.556+05:30  INFO 23904 --- [quiz] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-13T10:37:08.558+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-13T10:37:08.563+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-13T10:37:08.564+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-450 - Starting...
+2025-10-13T10:37:08.571+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-450 - Added connection com.mysql.cj.jdbc.ConnectionImpl@493afef9
+2025-10-13T10:37:08.571+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-450 - Start completed.
+2025-10-13T10:37:08.571+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-13T10:37:08.571+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-13T10:37:08.571+05:30  INFO 23904 --- [quiz] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-450)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-13T10:37:08.596+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-13T10:37:08.605+05:30  INFO 23904 --- [quiz] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:37:08.650+05:30  WARN 23904 --- [quiz] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-13T10:37:08.690+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-13T10:37:08.696+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-10-13T10:37:08.698+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Started QuizApplication in 0.443 seconds (process running for 242578.56)
+2025-10-13T10:37:08.698+05:30  INFO 23904 --- [quiz] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-13T10:38:26.120+05:30  INFO 23904 --- [quiz] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 24 class path changes (0 additions, 0 deletions, 24 modifications)
+2025-10-13T10:38:26.121+05:30  INFO 23904 --- [quiz] [Thread-1714] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-13T10:38:26.129+05:30  INFO 23904 --- [quiz] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-13T10:38:26.130+05:30  INFO 23904 --- [quiz] [Thread-1714] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:38:26.130+05:30  INFO 23904 --- [quiz] [Thread-1714] com.zaxxer.hikari.HikariDataSource       : HikariPool-450 - Shutdown initiated...
+2025-10-13T10:38:26.132+05:30  INFO 23904 --- [quiz] [Thread-1714] com.zaxxer.hikari.HikariDataSource       : HikariPool-450 - Shutdown completed.
+2025-10-13T10:38:26.234+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Starting QuizApplication using Java 24.0.1 with PID 23904 (C:\SPRINGBOOT\quiz\target\classes started by ravikantt in C:\SPRINGBOOT\quiz)
+2025-10-13T10:38:26.235+05:30 DEBUG 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T10:38:26.235+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T10:38:26.355+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-13T10:38:26.366+05:30  INFO 23904 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 2 JPA repository interfaces.
+2025-10-13T10:38:26.411+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-10-13T10:38:26.413+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T10:38:26.413+05:30  INFO 23904 --- [quiz] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T10:38:26.439+05:30  INFO 23904 --- [quiz] [restartedMain] o.a.c.c.C.[Tomcat-142].[localhost].[/]   : Initializing Spring embedded WebApplicationContext
+2025-10-13T10:38:26.439+05:30  INFO 23904 --- [quiz] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 203 ms
+2025-10-13T10:38:26.455+05:30  INFO 23904 --- [quiz] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-13T10:38:26.458+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-13T10:38:26.462+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-13T10:38:26.463+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-451 - Starting...
+2025-10-13T10:38:26.470+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-451 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d3401e6
+2025-10-13T10:38:26.471+05:30  INFO 23904 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-451 - Start completed.
+2025-10-13T10:38:26.471+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-13T10:38:26.471+05:30  WARN 23904 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-13T10:38:26.471+05:30  INFO 23904 --- [quiz] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-451)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-13T10:38:26.502+05:30  INFO 23904 --- [quiz] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-13T10:38:26.512+05:30  INFO 23904 --- [quiz] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:38:26.566+05:30  WARN 23904 --- [quiz] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-13T10:38:26.673+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-13T10:38:26.678+05:30  INFO 23904 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-10-13T10:38:26.679+05:30  INFO 23904 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Started QuizApplication in 0.461 seconds (process running for 242656.542)
+2025-10-13T10:38:26.680+05:30  INFO 23904 --- [quiz] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-13T10:38:51.469+05:30  INFO 12644 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Starting QuizApplication using Java 24.0.1 with PID 12644 (C:\SPRINGBOOT\quiz\target\classes started by ravikantt in C:\SPRINGBOOT\quiz)
+2025-10-13T10:38:51.471+05:30 DEBUG 12644 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T10:38:51.472+05:30  INFO 12644 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T10:38:51.538+05:30  INFO 12644 --- [quiz] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-13T10:38:51.538+05:30  INFO 12644 --- [quiz] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-13T10:38:52.847+05:30  INFO 12644 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-13T10:38:52.952+05:30  INFO 12644 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 2 JPA repository interfaces.
+2025-10-13T10:38:53.874+05:30  INFO 12644 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-10-13T10:38:53.912+05:30  INFO 12644 --- [quiz] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T10:38:53.912+05:30  INFO 12644 --- [quiz] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T10:38:54.005+05:30  INFO 12644 --- [quiz] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-13T10:38:54.005+05:30  INFO 12644 --- [quiz] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2467 ms
+2025-10-13T10:38:54.468+05:30  INFO 12644 --- [quiz] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-13T10:38:54.714+05:30  INFO 12644 --- [quiz] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-13T10:38:54.823+05:30  INFO 12644 --- [quiz] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-13T10:38:55.624+05:30  INFO 12644 --- [quiz] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-13T10:38:55.687+05:30  INFO 12644 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-13T10:38:56.660+05:30  INFO 12644 --- [quiz] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56470f17
+2025-10-13T10:38:56.664+05:30  INFO 12644 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-13T10:38:56.748+05:30  WARN 12644 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-13T10:38:56.750+05:30  WARN 12644 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-13T10:38:56.794+05:30  INFO 12644 --- [quiz] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-13T10:38:58.472+05:30  INFO 12644 --- [quiz] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-13T10:38:58.568+05:30  INFO 12644 --- [quiz] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:38:59.017+05:30  INFO 12644 --- [quiz] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-10-13T10:38:59.326+05:30  WARN 12644 --- [quiz] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-13T10:39:00.024+05:30  WARN 12644 --- [quiz] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-10-13T10:39:00.075+05:30  WARN 12644 --- [quiz] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-10-13T10:39:00.078+05:30  INFO 12644 --- [quiz] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:39:00.085+05:30  INFO 12644 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-13T10:39:00.099+05:30  INFO 12644 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-13T10:39:00.123+05:30  INFO 12644 --- [quiz] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-13T10:39:00.155+05:30 ERROR 12644 --- [quiz] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8085 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8085 or configure this application to listen on another port.
+
+2025-10-13T10:39:12.365+05:30  INFO 26020 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Starting QuizApplication using Java 24.0.1 with PID 26020 (C:\SPRINGBOOT\quiz\target\classes started by ravikantt in C:\SPRINGBOOT\quiz)
+2025-10-13T10:39:12.369+05:30 DEBUG 26020 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T10:39:12.371+05:30  INFO 26020 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T10:39:12.451+05:30  INFO 26020 --- [quiz] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-13T10:39:12.451+05:30  INFO 26020 --- [quiz] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-13T10:39:14.558+05:30  INFO 26020 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-13T10:39:14.746+05:30  INFO 26020 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 165 ms. Found 2 JPA repository interfaces.
+2025-10-13T10:39:16.257+05:30  INFO 26020 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-10-13T10:39:16.294+05:30  INFO 26020 --- [quiz] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T10:39:16.295+05:30  INFO 26020 --- [quiz] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T10:39:16.438+05:30  INFO 26020 --- [quiz] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-13T10:39:16.438+05:30  INFO 26020 --- [quiz] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3986 ms
+2025-10-13T10:39:16.748+05:30  INFO 26020 --- [quiz] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-13T10:39:16.889+05:30  INFO 26020 --- [quiz] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-13T10:39:16.997+05:30  INFO 26020 --- [quiz] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-13T10:39:17.694+05:30  INFO 26020 --- [quiz] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-13T10:39:17.735+05:30  INFO 26020 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-13T10:39:18.417+05:30  INFO 26020 --- [quiz] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e33c91a
+2025-10-13T10:39:18.421+05:30  INFO 26020 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-13T10:39:18.479+05:30  WARN 26020 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-13T10:39:18.480+05:30  WARN 26020 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-13T10:39:18.502+05:30  INFO 26020 --- [quiz] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-13T10:39:19.836+05:30  INFO 26020 --- [quiz] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-13T10:39:19.938+05:30  INFO 26020 --- [quiz] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:39:20.428+05:30  INFO 26020 --- [quiz] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-10-13T10:39:20.724+05:30  WARN 26020 --- [quiz] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-13T10:39:21.428+05:30  INFO 26020 --- [quiz] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-13T10:39:21.637+05:30  INFO 26020 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-10-13T10:39:21.679+05:30  INFO 26020 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Started QuizApplication in 9.933 seconds (process running for 10.487)
+2025-10-13T10:40:04.222+05:30  INFO 26020 --- [quiz] [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-13T10:40:04.222+05:30  INFO 26020 --- [quiz] [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-13T10:40:04.223+05:30  INFO 26020 --- [quiz] [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-13T10:40:05.366+05:30  INFO 26020 --- [quiz] [http-nio-8085-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 809 ms
+2025-10-13T10:40:16.495+05:30  INFO 26020 --- [quiz] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-10-13T10:40:16.504+05:30  INFO 26020 --- [quiz] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-13T10:40:16.517+05:30  INFO 26020 --- [quiz] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-13T10:40:16.521+05:30  INFO 26020 --- [quiz] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:40:16.524+05:30  INFO 26020 --- [quiz] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-13T10:40:16.532+05:30  INFO 26020 --- [quiz] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-13T10:40:16.640+05:30  INFO 26020 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Starting QuizApplication using Java 24.0.1 with PID 26020 (C:\SPRINGBOOT\quiz\target\classes started by ravikantt in C:\SPRINGBOOT\quiz)
+2025-10-13T10:40:16.640+05:30 DEBUG 26020 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T10:40:16.641+05:30  INFO 26020 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T10:40:16.906+05:30  INFO 26020 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-13T10:40:16.925+05:30  INFO 26020 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
+2025-10-13T10:40:17.057+05:30  INFO 26020 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-10-13T10:40:17.058+05:30  INFO 26020 --- [quiz] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T10:40:17.058+05:30  INFO 26020 --- [quiz] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T10:40:17.095+05:30  INFO 26020 --- [quiz] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-13T10:40:17.096+05:30  INFO 26020 --- [quiz] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 452 ms
+2025-10-13T10:40:17.135+05:30  INFO 26020 --- [quiz] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-13T10:40:17.139+05:30  INFO 26020 --- [quiz] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-13T10:40:17.153+05:30  INFO 26020 --- [quiz] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-13T10:40:17.154+05:30  INFO 26020 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-10-13T10:40:17.170+05:30  INFO 26020 --- [quiz] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a029903
+2025-10-13T10:40:17.172+05:30  INFO 26020 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-10-13T10:40:17.172+05:30  WARN 26020 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-13T10:40:17.173+05:30  WARN 26020 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-13T10:40:17.173+05:30  INFO 26020 --- [quiz] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-13T10:40:17.258+05:30  INFO 26020 --- [quiz] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-13T10:40:17.284+05:30  INFO 26020 --- [quiz] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:40:17.395+05:30  WARN 26020 --- [quiz] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-13T10:40:17.527+05:30  INFO 26020 --- [quiz] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-13T10:40:17.537+05:30  INFO 26020 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-10-13T10:40:17.542+05:30  INFO 26020 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Started QuizApplication in 0.936 seconds (process running for 66.35)
+2025-10-13T10:40:17.545+05:30  INFO 26020 --- [quiz] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-13T10:40:25.462+05:30  INFO 26020 --- [quiz] [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-13T10:40:25.462+05:30  INFO 26020 --- [quiz] [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-13T10:40:25.464+05:30  INFO 26020 --- [quiz] [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-10-13T10:40:25.464+05:30  INFO 26020 --- [quiz] [http-nio-8085-exec-1] c.j.quiz.controller.QuestionController   : Fetching all questions
+2025-10-13T10:40:25.464+05:30  INFO 26020 --- [quiz] [http-nio-8085-exec-1] c.j.q.service.impl.QuestionServiceImpl   : Fetching all questions from repository
+2025-10-13T10:40:25.681+05:30 DEBUG 26020 --- [quiz] [http-nio-8085-exec-1] c.j.q.service.impl.QuestionServiceImpl   : Total questions retrieved: 30
+2025-10-13T10:41:51.785+05:30  INFO 26020 --- [quiz] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-10-13T10:41:51.786+05:30  INFO 26020 --- [quiz] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-13T10:41:51.797+05:30  INFO 26020 --- [quiz] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-13T10:41:51.798+05:30  INFO 26020 --- [quiz] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:41:51.800+05:30  INFO 26020 --- [quiz] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-10-13T10:41:51.805+05:30  INFO 26020 --- [quiz] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-10-13T10:41:51.904+05:30  INFO 26020 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Starting QuizApplication using Java 24.0.1 with PID 26020 (C:\SPRINGBOOT\quiz\target\classes started by ravikantt in C:\SPRINGBOOT\quiz)
+2025-10-13T10:41:51.904+05:30 DEBUG 26020 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-13T10:41:51.904+05:30  INFO 26020 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-10-13T10:41:52.139+05:30  INFO 26020 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-13T10:41:52.157+05:30  INFO 26020 --- [quiz] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
+2025-10-13T10:41:52.332+05:30  INFO 26020 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-10-13T10:41:52.334+05:30  INFO 26020 --- [quiz] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-13T10:41:52.334+05:30  INFO 26020 --- [quiz] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-13T10:41:52.365+05:30  INFO 26020 --- [quiz] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-13T10:41:52.365+05:30  INFO 26020 --- [quiz] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 457 ms
+2025-10-13T10:41:52.395+05:30  INFO 26020 --- [quiz] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-13T10:41:52.398+05:30  INFO 26020 --- [quiz] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-13T10:41:52.409+05:30  INFO 26020 --- [quiz] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-13T10:41:52.411+05:30  INFO 26020 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-10-13T10:41:52.426+05:30  INFO 26020 --- [quiz] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43acad88
+2025-10-13T10:41:52.427+05:30  INFO 26020 --- [quiz] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-10-13T10:41:52.427+05:30  WARN 26020 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-13T10:41:52.427+05:30  WARN 26020 --- [quiz] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-13T10:41:52.428+05:30  INFO 26020 --- [quiz] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-13T10:41:52.499+05:30  INFO 26020 --- [quiz] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-13T10:41:52.515+05:30  INFO 26020 --- [quiz] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:41:52.606+05:30  WARN 26020 --- [quiz] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-13T10:41:52.700+05:30  INFO 26020 --- [quiz] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-13T10:41:52.711+05:30  INFO 26020 --- [quiz] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-10-13T10:41:52.716+05:30  INFO 26020 --- [quiz] [restartedMain] com.java.quiz.QuizApplication            : Started QuizApplication in 0.838 seconds (process running for 161.523)
+2025-10-13T10:41:52.718+05:30  INFO 26020 --- [quiz] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-13T10:42:15.770+05:30  INFO 26020 --- [quiz] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (1 addition, 1 deletion, 0 modifications)
+2025-10-13T10:42:15.771+05:30  INFO 26020 --- [quiz] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-13T10:42:15.780+05:30  INFO 26020 --- [quiz] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-13T10:42:15.781+05:30  INFO 26020 --- [quiz] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-13T10:42:15.782+05:30  INFO 26020 --- [quiz] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-10-13T10:42:15.785+05:30  INFO 26020 --- [quiz] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
