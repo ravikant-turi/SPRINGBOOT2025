@@ -62,18 +62,6 @@ public class Employee {
 		this.email = email;
 	}
 
-	public Employee(Long id, String firstName, String lastName, String email) {
-		super();
-		this.id = id;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.email = email;
-	}
-
-	public Employee() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
 	
 
 }
