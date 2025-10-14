@@ -118,6 +118,7 @@
   <path value="C:/Users/ravikantt/.m2/repository/org/springframework/spring-aop/6.2.10/spring-aop-6.2.10.jar"/>
  </paths>
  <validation>
+  <core validator-id="jboss.cdi.core"/>
   <el/>
  </validation>
  <aliases/>

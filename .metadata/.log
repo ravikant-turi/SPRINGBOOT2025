@@ -1209,3 +1209,381 @@ org.eclipse.core.runtime.CoreException: No property tester contributes a propert
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
 !SUBENTRY 1 org.eclipse.core.expressions 4 201 2025-10-14 09:45:45.842
 !MESSAGE No property tester contributes a property org.jboss.ide.eclipse.as.ui.eapxp to type class org.eclipse.ui.part.FileEditorInput
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-10-14 10:32:57.638
+!MESSAGE Resource '/micro-account/pom.xml' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/micro-account/pom.xml)[368]: java.lang.Exception: Resource '/micro-account/pom.xml' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:364)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:238)
+	at org.eclipse.core.internal.resources.Resource.deleteMarkers(Resource.java:842)
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.deleteMarkers(MavenMarkerManager.java:248)
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.deleteMarkers(MavenMarkerManager.java:242)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readMavenProjectFacades(ProjectRegistryManager.java:742)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:396)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$4(ProjectRegistryRefreshJob.java:154)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1053)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2025-10-14 10:32:57.641
+!MESSAGE Resource '/micro-account/pom.xml' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/micro-account/pom.xml' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:364)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:238)
+	at org.eclipse.core.internal.resources.Resource.deleteMarkers(Resource.java:842)
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.deleteMarkers(MavenMarkerManager.java:248)
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.deleteMarkers(MavenMarkerManager.java:242)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readMavenProjectFacades(ProjectRegistryManager.java:742)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:396)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$4(ProjectRegistryRefreshJob.java:154)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1053)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-10-14 10:32:58.712
+!MESSAGE Launch configuration EmsBackendApplication references closed project ems-backend
+!STACK 1
+org.eclipse.core.runtime.CoreException: Launch configuration EmsBackendApplication references closed project ems-backend
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1871)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1745)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:66)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:52)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:220)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:527)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:415)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:409)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:435)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:137)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:162)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 124 2025-10-14 10:32:58.712
+!MESSAGE Launch configuration EmsBackendApplication references closed project ems-backend
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-10-14 10:32:58.714
+!MESSAGE Launch configuration EmsBackendApplication references closed project ems-backend
+!STACK 1
+org.eclipse.core.runtime.CoreException: Launch configuration EmsBackendApplication references closed project ems-backend
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1871)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1745)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:66)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:52)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:220)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:527)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:415)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:410)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:435)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:137)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:162)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 124 2025-10-14 10:32:58.714
+!MESSAGE Launch configuration EmsBackendApplication references closed project ems-backend
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-10-14 10:32:58.746
+!MESSAGE Launch configuration EmsBackendApplication references closed project ems-backend
+!STACK 1
+org.eclipse.core.runtime.CoreException: Launch configuration EmsBackendApplication references closed project ems-backend
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1871)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1745)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:66)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:52)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:220)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2009)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:380)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:259)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:229)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:411)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:435)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:137)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:162)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 124 2025-10-14 10:32:58.747
+!MESSAGE Launch configuration EmsBackendApplication references closed project ems-backend
+
+!ENTRY org.jboss.tools.usage 2 0 2025-10-14 10:33:11.641
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-10-14 10:33:11.642
+!MESSAGE Could not send USER event 'Anonymous ID: d75d8a55-889a-477b-88d0-32c8a7f31f92': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-10-14 10:33:11.643
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-10-14 10:33:11.645
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-10-14 10:33:11.646
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-10-14 10:33:11.647
+!MESSAGE Could not send USER event 'Anonymous ID: d75d8a55-889a-477b-88d0-32c8a7f31f92': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-10-14 10:33:11.649
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-10-14 10:33:11.650
+!MESSAGE Could not send ACTION event 'startQuteLS': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-10-14 10:33:11.656
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-10-14 10:33:11.657
+!MESSAGE Could not send USER event 'Anonymous ID: d75d8a55-889a-477b-88d0-32c8a7f31f92': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-10-14 10:33:11.659
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-10-14 10:33:11.660
+!MESSAGE Could not send ACTION event 'startLS': no analytics instance present.
+
+!ENTRY org.eclipse.jface 2 0 2025-10-14 10:36:35.569
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-10-14 10:36:35.569
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolInWorkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolInWorkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-10-14 10:36:37.867
+!MESSAGE Could not get trigger characters due to timeout after 50 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getFuture(LSContentAssistProcessor.java:339)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getCompletionProposalAutoActivationCharacters(LSContentAssistProcessor.java:380)
+	at org.eclipse.jface.text.contentassist.IContentAssistProcessorExtension$1.isCompletionProposalAutoActivation(IContentAssistProcessorExtension.java:115)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.getAutoActivationTriggerType(ContentAssistant.java:1249)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.keyPressed(ContentAssistant.java:346)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.verifyKey(ContentAssistant.java:375)
+	at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(TextViewer.java:482)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:70)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4338)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1214)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1238)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1223)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:860)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5742)
+	at org.eclipse.swt.custom.StyledText.lambda$30(StyledText.java:5426)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4338)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1214)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1238)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1223)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1265)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1261)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1748)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4902)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:341)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4779)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:336)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5106)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3722)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:678)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-10-14 10:36:37.919
+!MESSAGE Could not get trigger characters due to timeout after 50 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getFuture(LSContentAssistProcessor.java:339)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getContextInformationAutoActivationCharacters(LSContentAssistProcessor.java:387)
+	at org.eclipse.jface.text.contentassist.IContentAssistProcessorExtension$1.isContextInformationAutoActivation(IContentAssistProcessorExtension.java:128)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.getAutoActivationTriggerType(ContentAssistant.java:1252)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.keyPressed(ContentAssistant.java:346)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.verifyKey(ContentAssistant.java:375)
+	at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(TextViewer.java:482)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:70)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4338)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1214)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1238)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1223)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:860)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5742)
+	at org.eclipse.swt.custom.StyledText.lambda$30(StyledText.java:5426)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4338)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1214)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1238)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1223)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1265)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1261)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1748)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4902)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:341)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4779)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:336)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5106)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3722)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:678)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-10-14 10:36:37.973
+!MESSAGE Could not get language server due to timeout after 50 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.LanguageServers.matches(LanguageServers.java:225)
+	at java.base/java.util.stream.MatchOps$1MatchSink.accept(MatchOps.java:90)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$IteratorSpliterator.tryAdvance(Spliterators.java:1950)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:230)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:196)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.anyMatch(ReferencePipeline.java:632)
+	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.anyMatching(LanguageServers.java:296)
+	at org.eclipse.lsp4e.format.DocumentFormatOnTypeAutoEditStrategy.customizeDocumentCommand(DocumentFormatOnTypeAutoEditStrategy.java:36)
+	at org.eclipse.jface.text.TextViewer.customizeDocumentCommand(TextViewer.java:3715)
+	at org.eclipse.jface.text.TextViewer.handleVerifyEvent(TextViewer.java:3750)
+	at org.eclipse.jface.text.source.projection.ProjectionViewer.handleVerifyEvent(ProjectionViewer.java:1250)
+	at org.eclipse.jface.text.TextViewer$TextVerifyListener.verifyText(TextViewer.java:428)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:311)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4338)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1214)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1238)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1223)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:860)
+	at org.eclipse.swt.custom.StyledText.modifyContent(StyledText.java:7101)
+	at org.eclipse.swt.custom.StyledText.sendKeyEvent(StyledText.java:8033)
+	at org.eclipse.swt.custom.StyledText.doContent(StyledText.java:2032)
+	at org.eclipse.swt.custom.StyledText.handleKey(StyledText.java:5716)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5747)
+	at org.eclipse.swt.custom.StyledText.lambda$30(StyledText.java:5426)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4338)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1214)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1238)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1223)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1265)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1261)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1748)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4902)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:341)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4779)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:336)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5106)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3722)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:678)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
