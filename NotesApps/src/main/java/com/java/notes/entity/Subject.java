@@ -1,4 +1,4 @@
-package com.example.notes.entity;
+package com.java.notes.entity;
 
 import java.util.ArrayList;
 import java.util.List;

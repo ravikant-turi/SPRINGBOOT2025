@@ -1,9 +1,9 @@
-package com.example.notes.service;
+package com.java.notes.service;
 
 import java.util.List;
 
-import com.example.notes.dto.SubjectDTO;
-import com.example.notes.payloads.ApiResponse;
+import com.java.notes.dto.SubjectDTO;
+import com.java.notes.payloads.ApiResponse;
 
 public interface SubjectService {
 

@@ -1,4 +1,4 @@
-package com.example.notes.dto;
+package com.java.notes.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,5 +12,5 @@ public class SubjectDTO {
 	private String name;
 	private String description;
 
-	// Constructors, Getters, Setters
+	
 }

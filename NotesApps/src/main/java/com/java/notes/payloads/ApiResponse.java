@@ -1,4 +1,4 @@
-package com.example.notes.payloads;
+package com.java.notes.payloads;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

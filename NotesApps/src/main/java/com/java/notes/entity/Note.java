@@ -1,6 +1,5 @@
-package com.example.notes.entity;
+package com.java.notes.entity;
 
-import java.util.List;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
