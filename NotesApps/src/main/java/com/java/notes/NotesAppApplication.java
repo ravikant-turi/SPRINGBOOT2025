@@ -1,4 +1,4 @@
-package com.example.NotesApps;
+package com.java.notes;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class NotesAppApplication {
 
 	public static void main(String[] args) {
+		
 		SpringApplication.run(NotesAppApplication.class, args);
+		
 	}
 
 }
