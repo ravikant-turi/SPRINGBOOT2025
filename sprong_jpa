@@ -1,0 +1,34 @@
+Layer 1: Foundation (What's actually happening underneath)
+  → JPA vs Hibernate vs Spring Data JPA — the difference matters
+  → EntityManager & Persistence Context
+  → Entity Lifecycle States
+
+Layer 2: Mapping (Beyond basic @Entity)
+  → Relationships in depth — OneToMany, ManyToMany, cascade, fetch
+  → Embeddables, Inheritance strategies
+  → Composite Keys
+
+Layer 3: Querying (Where most interviews go deep)
+  → Derived query methods — how Spring generates SQL
+  → JPQL vs Native Queries
+  → @Query, @Modifying, @Transactional on queries
+  → Criteria API (dynamic queries)
+  → Projections & DTOs
+
+Layer 4: Transactions (Critical for SDE2)
+  → @Transactional internals — proxy mechanism
+  → Propagation types — what each one means
+  → Isolation levels — and real problems they solve
+  → Common pitfalls (self-invocation, LazyInit exceptions)
+
+Layer 5: Performance (What separates SDE2 from SDE1)
+  → N+1 Problem — what it is, how to detect, how to fix
+  → Fetch strategies — LAZY vs EAGER (and when each causes bugs)
+  → Pagination & Sorting
+  → First-level & Second-level Cache
+
+Layer 6: Advanced (Bonus — makes you stand out)
+  → Auditing (@CreatedDate, @LastModifiedBy)
+  → Soft deletes
+  → Custom Repository implementations
+  → Spring Data Specifications
